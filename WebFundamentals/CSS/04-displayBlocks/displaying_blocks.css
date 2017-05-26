@@ -1,0 +1,38 @@
+#lHImg{
+    width: 100px;
+    height: 64px;
+    display: inline-block;
+    background-color: blue;
+    margin-top: 24px;
+}
+
+#rHImg{
+    width: 100px;
+    height: 64px;
+    display: inline-block;
+    background-color: blue;
+    margin-top: 16px;
+}
+
+h1{
+    display: inline-block;
+}
+
+#wrap{
+    background-color: silver;
+    display: inline-block;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+#header{
+    margin-left: 24px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#imagePnl{
+    margin-left: 256px;
+    margin-right: 256px;
+}

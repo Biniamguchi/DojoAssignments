@@ -1,0 +1,237 @@
+*{
+    margin:  0;
+    padding: 0;
+    border:  0;
+}
+
+#fixedWidth{
+    width:      970px;
+    margin:     auto;
+    background: linear-gradient(rgb(36,80,118),rgb(39,90,133));
+}
+
+#header{
+    height:  128px;
+    padding: 8px;
+    display: flex;
+}
+
+#pyLogo{
+    padding: 8px;
+    width:   40%;
+}
+
+#rightHeader{
+    padding: 8px;
+    width:   60%;
+}
+
+#txtSize{
+    width:        40%;
+    margin:       auto;
+    margin-right: 0;
+    margin-bottom: 4px;
+    color:        white;
+}
+#txtSize span{
+    text-decoration: underline;
+    color: #FDE35E;
+}
+
+#searchDiv{
+    width:   50%;
+    height:  50%;
+    margin:  auto;
+    margin-right: 0;
+    background-color: rgb(70,70,70);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(32,32,32,.75);
+}
+#searchBox{
+    height: 32px;
+    margin: 12px 4px 12px 32px;
+}
+#searchBtn{
+    height: 28px;
+    width:  32px;
+    border-radius: 4px;
+    background-color: #294E73;
+    border: 2px solid white;
+}
+
+#nav{
+    height:           48px;
+    width:            80%;
+    margin:           auto;
+    display:          flex;
+    border-radius:    8px;
+    box-shadow:       2px 2px 2px rgba(0,0,0,.75);
+    background-color: rgb(65,118,168);
+}
+
+.navLink{
+    width:20%;
+    text-align:      center;
+    text-decoration: none;
+    color:           white;
+    font-size:       16pt;
+    padding:         12px;
+}
+
+#sideList{
+    display: inline-block;
+    margin-top: 32px;
+    list-style: none;
+    color: white;
+    font-size: 14pt;
+    text-align: center;
+    width: 40%;
+}
+#sideList > li{
+    padding: 4px;
+}
+#sideList li a{
+    color: white;
+}
+
+.cin{
+    font-size:       10px;
+    color:           yellow;
+    position:        relative;
+    bottom:          2px;
+    text-decoration: none;
+}
+
+.main{
+    display:        inline-block;
+    margin-top:     32px;
+    width:          55%;
+    vertical-align: top;
+}
+.main p{
+    position: relative;
+    color: white;
+    text-align: center;
+    right: 15%;
+}
+.main ul{
+    top: 12px;
+    position: relative;
+    right: 100px;
+}
+.main ul > li{
+    padding: 4px;
+    font-size:  16pt;
+    color:      #FEE35D;
+    list-style: none;
+    text-align: center;
+}
+.main h3{
+    padding:  20px;
+    position: relative;
+    left:     15%;
+    color:    white;
+}
+
+
+.mid{
+    background-color: white;
+}
+.blueBar{
+    position:         relative;
+    width:            400px;
+    height:           4px;
+    background-color: #71A3D0;
+    left:             100px;
+    top:              12px;
+}
+.blueBar2{
+    position:         relative;
+    width:            400px;
+    height:           4px;
+    background-color: #71A3D0;
+    left:             524px;
+    bottom:           181px;
+}
+
+.midLeft h2{
+    position: relative;
+    top:      20px;
+    left:     200px;
+}
+.midLeft p{
+    text-align: center;
+    position: relative;
+    top: 28px;
+    left: 128px;
+    width: 30%;
+}
+
+.midLeft ul{
+    width: 25%;
+    position: relative;
+    top:  48px;
+    left: 160px;
+    text-align: center;
+}
+.midLeft ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #78A8D5;
+}
+
+.midRight h2{
+    position: relative;
+    left: 650px;
+    bottom: 160px;
+}
+
+.midRight p{
+    width: 30%;
+    text-align: center;
+    position: relative;
+    left: 570px;
+    bottom: 150px;
+}
+
+.midRight ul{
+    width: 25%;
+    position: relative;
+    left: 600px;
+    bottom: 140px;
+    text-align: center;
+}
+
+.midRight p a{
+    text-decoration: none;
+    color: #78A8D5;
+}
+
+.midRight ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #78A8D5;
+}
+
+.footer{height: 96px;}
+.footer ul{
+    position: relative;
+    left: 100px;
+    top:  32px;
+}
+.footer ul > li{
+    display: inline-block;
+    font-size: 16pt;
+    padding: 8px 32px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #78A8D5;
+}
+.footer p{
+    color: #78A8D5;
+    font-size: 8pt;
+    position: relative;
+    left: 425px;
+    top:  32px;
+}

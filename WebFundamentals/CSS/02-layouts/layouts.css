@@ -1,0 +1,17 @@
+#d1,#d2,#d3{
+    width: 96px;
+    height: 96px;
+    background-color: red;
+}
+
+#d1{
+    margin: 20px;
+}
+
+#d2{
+    margin: 30px;
+}
+
+#d3{
+    margin: 40px;
+}

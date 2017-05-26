@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="displaying_blocks.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="lHImg"></div>
+            <h1>Display Our Blocks</h3>
+            <div id="rHImg"></div>
+        </div>
+
+        <div id="imagePnl">
+            
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var par = document.getElementById("imagePnl");
+        var rand = Math.random;
+        var flr  = Math.floor;
+        var r,g,b;
+
+        for(var i=0;i<20;i++){
+            r = flr(rand()*255);
+            g = flr(rand()*255);
+            b = flr(rand()*255);
+
+            var elem = document.createElement("div");
+            elem.style.width   = "128px";
+            elem.style.height  = "128px";
+            elem.style.margin  = "0px 2px";
+            elem.style.padding = "0px 0px";
+            elem.style.display = "inline-block";
+            elem.style.border  = "4px solid black";
+            elem.style.background = "rgb("+r+","+g+","+b+")";
+
+            par.appendChild(elem);
+        }
+    </script>
+</body>
+</html>
