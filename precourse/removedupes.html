@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    function App(name,bio,exp){
+        this.name = name;
+        this.bio  = bio;
+        this.exp  = exp;
+    }
+
+    var apps = [
+        new App("Bill Engvall","Backend Dev","7+ years"),
+        new App("Bill Engvall","Backend Dev","7+ years"),
+        new App("Bill Engvall","Backend Dev","7+ years"),
+        new App("Jeff Foxworthy","Frontend Dev","5+ years"),
+        new App("Larry The Cable Guy","Frontend Dev","3+ years"),
+        new App("Ron White","Backend Dev","9+ years"),
+        new App("Ron White","Backend Dev","9+ years"),
+    ]
+
+    function remove(arr,ind){
+        if(!arr[ind]) return;
+        var val = arr[ind];
+
+        for(var i=ind;i<arr.length;i++){
+            arr[i] = arr[i+1];
+        }
+        arr.length -= 1;
+
+        return val;
+    }
+
+    function removeDupes(arr){
+        var j = 1;
+
+        for(var i=0;i<arr.length;i++){
+            if(arr[j] != undefined){
+                if(arr[i].name == arr[j].name){
+                    remove(arr,i);
+                    remove(arr,j);
+                }
+            }
+            j++;
+        }
+    }
+    removeDupes(apps);
+
+    for(var i=0;i<apps.length;i++){
+        console.log(i,apps[i].name);
+    }
+</script>
+</body>
+</html>

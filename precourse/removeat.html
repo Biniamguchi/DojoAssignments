@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var odd = [1,3,5,32,7,9];
+
+    function removeAt(arr,ind){
+        if(!arr[ind]) return;
+        var val = arr[ind];
+
+        for(var i=ind;i<arr.length;i++){
+            arr[i] = arr[i+1];
+        }
+        arr.length -= 1;
+
+        return val;
+    }
+
+    var removedVal = removeAt(odd,3);
+    console.log(removedVal,odd);
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var a = [1,2,3];
+
+    function rotate(arr,amt){ // This took way too long.
+        var tmp;
+
+        if(amt > 0){
+            for(var i=0;i<amt;i++){
+                arr.length += 1;
+
+                for(var j=arr.length-1;j>=0;j--){
+                    arr[j] = arr[j-1];
+                }
+                tmp = arr[arr.length-1];
+                arr[arr.length-1] = arr[0];
+                arr[0] = tmp;
+                arr.length -= 1;
+            }
+        }else if(amt < 0){
+            for(var i=0;i>amt;i--){
+                var first = arr[0];
+                for(var j=0;j<arr.length;j++){
+                    tmp = arr[j];
+                    arr[j] = arr[j+1];
+                }
+                arr[arr.length-1] = first;
+            }
+        }
+    }
+    rotate(a,1);
+    console.log(a);
+    rotate(a,-2)
+    console.log(a);
+</script>
+</body>
+</html>

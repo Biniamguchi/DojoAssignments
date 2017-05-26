@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var arr = [5,8,27,32,28,34,13,23,10,6];
+
+    function filterRange(arr,min,max){
+        var ind;
+
+        for(var i=0;i<arr.length;i++){
+            if(arr[i] >= min && arr[i] <= max){
+                for(var j=i;j<arr.length;j++){ // Start at this values index to replace all current values with next value.
+                    arr[j] = arr[j+1];
+                }
+                arr.length -= 1; // Cut length
+            }
+        }
+    }
+    filterRange(arr,20,30);
+    console.log(arr);
+</script>
+</body>
+</html>

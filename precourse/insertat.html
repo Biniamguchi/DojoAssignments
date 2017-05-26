@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var a = [5,10,15,25,30,35];
+
+    function insertAt(arr,ind,val){
+        arr.length += 1;
+
+        for(var i=arr.length-1;i>=ind;i--){
+            arr[i] = arr[i-1];
+        }
+
+        arr[ind] = val;
+    }
+    insertAt(a,3,20);
+
+    console.log(a);
+</script>
+</body>
+</html>

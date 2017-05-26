@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    function concat(arr1,arr2){
+        var newArr = [];
+
+        for(var i=0;i<arr1.length;i++){
+            newArr[i] = arr1[i];
+        }
+
+        var len  = newArr.length;   // Start here
+        var len2 = len+arr2.length; // End here.
+        var ind  = 0;               // actual index in arr2.
+
+        for(var i=len;i<len2;i++){
+            newArr[i] = arr2[ind];
+            ind++;
+        }
+
+        return newArr;
+    }
+    var a = concat(["I","do","not","like"],["green","eggs","and","ham"]);
+    console.log(a);
+</script>
+</body>
+</html>

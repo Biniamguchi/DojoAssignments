@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    // I swear, we already did this in some other lesson, but here we go.
+    var a = [5,10,15,20];
+
+    function reverse(arr){
+        var tmp;
+        var i = 0;
+        var j = arr.length-1;
+        var tmp;
+
+        while(i < arr.length/2){ // If not half the length, itll end up the same.
+            tmp    = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
+
+            i++;
+            j--;
+        }
+    }
+    reverse(a);
+    console.log(a);
+</script>
+</body>
+</html>

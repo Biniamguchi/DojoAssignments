@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    // If a number is bigger than the next value, you cant see the next value.
+    // If a number is below 0, you cant see it.
+
+    var buildings = [1,-1,4,2,8,7];
+
+    function skyline(arr){
+        var canSee = [];
+
+        for(var i=0;i<arr.length;i++){
+            if(arr[i] < 0){
+                for(var j=i;j<arr.length;j++){ // Remove nums less than 0;
+                    arr[i] = arr[i+1];
+                }
+                arr.length -= 1;
+            }
+
+
+        }
+
+        return canSee;
+    }
+    var b = skyline(buildings);
+    console.log(b);
+</script>
+</body>
+</html>

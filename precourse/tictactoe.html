@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    // Take in a width and height, multiply them and you have your board array size. 1's can occupy a player, 2's AI and 0's non-occupied.
+
+    // Yes you can present it with an array. One way is the way I just mentioned.
+
+    // It would contain 0's,1's and 2's, dependant on what occupies the space.
+
+    // You could have an array of arrays. If you did, you could have three, each containing a value representing its occupancy. The array, being the column, the value being the row.
+
+    var TURN = {
+        PLAYER:1,
+        AI:2,
+    };
+
+    function Board(width,height){
+        this.width   = width;
+        this.height  = height;
+        this.board   = new Array(width*height);
+        this.turn    = TURN.PLAYER;
+
+        this.hasColumn = function(){
+            var col;
+
+            for(var i=0;i<width;i++){
+                console.log(this.board);
+            }
+        }
+
+        this.hasRow = function(){
+            var row;
+
+            for(var i=0;i<height;i++){
+                console.log(row);
+            }
+        }
+
+        this.hasDiag = function(){
+
+        }
+
+        this.nextTurn = function(){
+            if(this.turn == TURN.PLAYER){
+                this.turn = TURN.AI;
+            } else{
+                this.turn = TURN.PLAYER;
+            }
+        }
+
+        for(var i=0;i<this.board.length;i++){
+            this.board[i] = 0; // Init values to 0, since theyre unoccupied.
+        }
+    }
+    var board = new Board(3,3);
+    //console.log(board);
+
+    board.hasColumn();
+</script>
+</body>
+</html>

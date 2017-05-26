@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var arr = [3,56,37,12,9,16];
+
+    function swap(arr,ind1,ind2){
+        var tmp   = arr[ind1];
+        arr[ind1] = arr[ind2];
+        arr[ind2] = tmp;
+    }
+
+    function sort(arr){
+        var tmp;
+
+        for(var i=0;i<arr.length;i++){
+            if(arr[i] > arr[i+1]){
+                tmp      = arr[i];
+                arr[i]   = arr[i+1];
+                arr[i+1] = tmp;
+            }
+        }
+    }
+    sort(arr);
+
+    console.log(arr);
+</script>
+</body>
+</html>

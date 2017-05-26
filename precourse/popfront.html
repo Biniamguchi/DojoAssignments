@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var odd = [1,3,5,7];
+
+    function popFront(arr){
+        var first = arr[0];
+
+        for(var i=0;i<arr.length;i++){
+            arr[i] = arr[i+1];
+        }
+        arr.length -= 1;
+
+        return first;
+    }
+    var firstVal = popFront(odd);
+    console.log(firstVal,odd);
+</script>
+</body>
+</html>
