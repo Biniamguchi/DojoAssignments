@@ -1,0 +1,122 @@
+*{
+    margin:  0px;
+    padding: 0px;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: auto;
+    background-color: #DBE0D4;
+    padding: 16px;
+}
+
+.divBlue{
+    background-color: #00B5AB;
+}
+
+.nav{
+    padding: 8px;
+}
+.nav img{
+    width: 4%;
+    display: inline-block;
+}
+.nav h1{
+    width: 39%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2px;
+}
+.nav ul{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nav ul li a{color: white;}
+
+.content{
+    background-color: #F8EB99;
+    margin-top: 16px;
+    padding: 16px;
+}
+
+.lContent{
+    background-color: #124345;
+    width: 25%;
+    padding: 8px;
+    display: inline-block;
+}
+
+.rContent{
+    width: 70%;
+    display: inline-block;  
+    vertical-align: top;
+    margin-left: 2%;
+}
+
+.rContTop{
+    display: flex;
+    margin-bottom: 7%;
+}
+
+.rContMid{
+    display: flex;
+}
+
+.rContBot{
+    margin-top: 7%;
+}
+
+.contSm{
+    background-color: #124345;
+    width: 30%;
+    margin: 0px 12px;
+}
+
+.contMed{
+    background-color: #124345;
+    width: 50%;
+    margin: 0px 12px;
+}
+
+.contWide{
+    background-color: #124345;
+    width: 100%;
+    margin: 0px 12px;
+}
+
+.hLarge{
+    padding: 8px;
+    color: white;
+}
+.hMed{
+    padding: 8px;
+    color: white;
+}
+
+.pPrim{
+    color: white;
+    padding: 4px 16px;
+}
+
+.spanBlu{color: #00B5AB;}
+
+.footer{
+    margin-top: 8px;
+    height: 64px;
+}
+.footer p{
+    margin-top: 2%;
+    margin-left: 28%;
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+}
+.footer a{
+    width: 10%;
+    display: inline-block;
+}

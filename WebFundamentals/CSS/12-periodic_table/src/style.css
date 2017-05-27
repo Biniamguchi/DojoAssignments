@@ -1,0 +1,82 @@
+*{
+    margin:  0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: auto;
+    padding: 8px;
+    background-color: #EEEEEE;
+}
+
+#listT{
+    padding: 0px 12px;
+}
+
+#listL{
+    margin: 0;
+    display: inline-block;
+}
+
+.red   {color: red;}
+.navy  {color: #1913B6; font-weight: bold;}
+.pink  {background-color: #FD9A98;}
+.blue  {background-color: #689BFF;}
+.yellow{background-color: #FECB00;}
+.green {background-color: #1FCA21;}
+
+.blueList{
+    display: inline-block;
+    vertical-align: top;
+    width: 4.5%;
+}
+#blueListL{margin: 0;}
+#blueListR{margin-top: 4.4%;}
+
+#redList{
+    display: inline-block;
+    width: 44%;
+    vertical-align: top;
+    margin-top: 13.2%;
+    margin-bottom: 20px;
+}
+#redList li{display: inline-block;}
+
+#yelList{
+    display: inline-block;
+    width: 26.5%;
+    vertical-align: top;
+    margin-top: 0%;
+}
+#yelList li{display: inline-block;}
+
+#greenList{
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin-top: 0%;
+}
+#greenList li{display: inline-block;}
+
+.numBox{
+    width:  44px;
+    height: 44px;
+    text-align: center;
+    list-style: none;
+}
+
+.numTop{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.elemTxt{font-size: 8pt;color: black;font-weight: normal;}
+
+#botLeft{
+    width: 20%;
+    display: inline-block;
+}
+#botLeft p{
+    padding: 16px;
+}

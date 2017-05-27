@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Periodic Table</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <ul id="listT"></ul>
+            <ul id="listL"></ul>
+
+            <ul id="blueListL" class="blueList"></ul>
+            <ul id="blueListR" class="blueList"></ul>
+            <ul id="redList"></ul>
+            <ul id="yelList"></ul>
+
+            <div id="botLeft">
+                <p class="red headMain">*Lanthanoids*</p>
+                <p class="red headMain">**Actinoids**</p>
+            </div>
+            
+            <ul id="greenList"></ul>
+        </div>
+
+        <script type="text/javascript">
+            listNums();
+
+            addList(blueL,"numBox blue navy","blueListL");
+            addList(blueR,"numBox blue navy","blueListR");
+            addList(redList,"numBox pink navy","redList");
+            addList(yelList,"numBox yellow navy","yelList");
+            addList(greenList,"numBox green navy","greenList");
+        </script>
+    </body>
+</html>
