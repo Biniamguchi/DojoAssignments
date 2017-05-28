@@ -12,12 +12,11 @@ function copyArr(arr){
 }
 
 function remNums(arr){
-    var j,k;
-
     for(var i=0;i<arr.length;i++){
-        j = arr[i];
-        if(typeof(j) === "number"){
-            for(var k=i;k<arr.length+k;k++){arr.length -= 1;}
+        if(typeof(arr[i] === "number")){
+            arr[i] = arr[i+1];
+            arr.length -= 1;
+            i--;
         }
     }
 }
