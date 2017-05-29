@@ -1,0 +1,18 @@
+*{
+    margin:  0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(128,128,128);
+}
+
+#puzzleDiv{
+    width: 13.5%;
+    margin: auto;
+    padding: 13.75% 0px;
+}
+
+.puzzle{
+    display: block;
+}
