@@ -1,0 +1,17 @@
+#cont{
+    width: 75%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#cont img{
+    height: 256px;
+    border: 1px solid black;
+}
+
+#restore{
+    font-size: 12pt;
+    width: 10%;
+    height: 32px;
+    margin-top: 24px;
+}
