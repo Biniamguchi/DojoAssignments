@@ -1,0 +1,53 @@
+*{
+    margin:  0;
+    padding: 0;
+    border: 1px dashed red;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(16,16,16);
+    padding: 8px;
+}
+
+.head{
+    height: 128px;
+    background-color: #1A1A1A;
+}
+
+.head h2{
+    text-align: center;
+    width: 30%;
+    padding: 5% 0%;
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+    background: linear-gradient(rgb(96,96,96),rgb(64,64,64));
+    padding: 4px;
+}
+.navList li{
+    color: silver;
+    padding: 4px;
+}
+
+.contBox{
+    background-color: rgb(25,25,25);
+    margin: auto;
+}
+
+.contBox h1{
+    font-size: 32pt;
+    text-align: center;
+}
+
+.contBox p{
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
+#hide{width: 256px;}
+
+.red{color:red;}
