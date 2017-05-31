@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin:  0;
+    border:  0;
+}
+img{display: inline-block;}
+h1{
+    text-align: center;
+    padding: 32px;
+}
+h4{
+    text-align: left;
+    padding: 16px;
+}
+
+.pokeDex{
+    width:   75%;
+    display: inline-block;
+}
+.pokeInfo{
+    width:   24%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #FF0019;
+}
+.pokeInfo div{
+    background-color: white;
+    margin: 24px;
+}
+#pokeImg{
+    display: block;
+    width: 35%;
+    margin: auto;
+}
+#typesList{
+    width: 75%;
+    margin: auto;
+}
