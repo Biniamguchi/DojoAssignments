@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="{{style}}">
+</head>
+<body>
+    <h1>Wins: {{session['wins']}}</h1>
+    <h1>Losses: {{session['losses']}}</h1>
+    <h1>Ties: {{session['ties']}}</h1>
+
+    <form action="/process" method="post">
+        <label>Rock</label>
+        <input type="submit" name="sub">
+        <input type="hidden" name="result" value="rock">
+    </form>
+
+    <form action="/process" method="post">
+        <label>Paper</label>
+        <input type="submit" name="sub">
+        <input type="hidden" name="result" value="paper">
+    </form>
+
+    <form action="/process" method="post">
+        <label>Scissors</label>
+        <input type="submit" name="sub">
+        <input type="hidden" name="result" value="scissors">
+    </form>
+
+    <a href="/"><button>Reset</button></a>
+</body>
+</html>
