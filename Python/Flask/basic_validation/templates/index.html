@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Validation</title>
+    </head>
+
+    <body>
+        {% with msgs = get_flashed_messages() %}
+            {% if msgs %}
+                {% for msg in msgs %}
+                    <p>{{msg}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/process" method="post">
+            <input type="text" name="name">
+            <input type="submit" name="sub">
+        </form>
+    </body>
+</html>

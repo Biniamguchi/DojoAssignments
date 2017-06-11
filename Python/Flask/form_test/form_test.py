@@ -1,6 +1,7 @@
-from flask import Flask,render_template,request,redirect
+from flask import Flask,render_template,request,redirect,session
 
 app = Flask(__name__)
+app.secret_key = "NOCOOKIES4U" # cant use session / cookies without a key.
 
 @app.route('/')
 def index():
@@ -8,15 +9,14 @@ def index():
 
 @app.route('/users',methods=['POST'])
 def newUser():
-    print request.form
+    session['name'] = request.form['name']
+    session['email'] = request.form['email']
 
-    name  = request.form['name']
-    email = request.form['email']
-
-    return redirect("http://www.google.com")
+    return redirect("/show")
 
 @app.route('/show')
 def show_user():
-  return render_template('user.html', name='Jay', email='kpatel@codingdojo.com')
+    #You could set session vars in the html directly or pass them as args to be rendered.
+    return render_template('user.html')
 
 app.run(debug=True)
