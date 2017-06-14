@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Number To Roman Numeral
+		</title>
+	</head>
+
+	<body>
+			<script>
+				function numToRoman(num){
+					if(num > 4000){return 1;}
+
+					var numerals = {
+						I:1,
+						II:2,
+						III:3,
+						IV:4,
+						V:5,
+						VI:6,
+						VII:7,
+						VIII:8,
+						IX:9,
+						X:10
+					}
+					var res = [];
+
+					for(var i=1;i<1000;i*=10){
+					var digit = Math.floor((num / i) % 10);
+						res.push(Math.floor(num/i%10);
+					}
+					for(var i=0,j=res.length;i<j;i++,j--){
+						var tmp = res[i];
+						res[i] = res[j];
+						res[j] = tmp;
+					}
+
+					console.log(res);
+				}
+
+				numToRoman(345);
+			</script>
+	</body>
+</html>
