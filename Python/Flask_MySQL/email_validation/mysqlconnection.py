@@ -7,7 +7,7 @@ class MySQLConnection(object):
                 'host': 'localhost',
                 'database': db, # we got db as an argument
                 'user': 'root',
-                'password': 'tightrip',
+                'password': '',
                 'port': '3306' # change the port to match the port your SQL server is running on
         }
         # this will use the above values to generate the path to connect to your sql database
@@ -17,7 +17,7 @@ class MySQLConnection(object):
         # establish the connection to database
         self.db = SQLAlchemy(app)
     # this is the method we will use to query the database
-    def query_db(self, query, data=None):
+    def query(self, query, data=None):
         result = self.db.session.execute(text(query), data)
         if query[0:6].lower() == 'select':
             # if the query was a select
