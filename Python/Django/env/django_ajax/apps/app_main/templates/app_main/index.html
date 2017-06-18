@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django AJAX</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app_main/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'app_main/main.js' %}"></script>
+</head>
+<body>
+    <h1>Welcome!</h1>
+
+    <button class="btnMain">Click Me!</button>
+
+    <h2 class="response"></h2>
+</body>
+</html>

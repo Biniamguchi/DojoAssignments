@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Surprises</h1>
+
+    {% for surprise in request.session.surprises %}
+        <p>{{ surprise }}</p>
+    {% endfor %}
+
+    <a href="/"><button>Go Back</button></a>
+</body>
+</html>
