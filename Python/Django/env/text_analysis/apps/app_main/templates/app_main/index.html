@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analysis</title>
+</head>
+<body>
+    <h1>Enter your sentence:</h1>
+
+    <form action="/process" method="post">
+        {% csrf_token %}
+        <input type="text" name="sentence">
+        <input type="submit" value="Evaluate">
+    </form>
+</body>
+</html>

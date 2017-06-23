@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro To Queries</title>
+</head>
+<body>
+
+    {% for blog in blogs %}
+        {% if blog %}
+            <p>{{blog.title}}</p>
+            <p>{{blog.blog}}</p>
+        {% endif %}
+    {% endfor %}
+
+
+    <form action="/blog" method="post">
+        {% csrf_token %}
+        <input type="text" name="title">
+        <textarea name="blog"></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>

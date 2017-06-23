@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% for blog in blogs %}
+        <p>{{blog.title}}</p>
+        <p>{{blog.blog}}</p>
+
+        <!-- Everything has an _set attribute? -->
+        {% for comment in blog.comment_set.all %}
+            <p>{{comment.comment}}</p>
+        {% endfor %}
+
+        <form action="/comments/{{blog.id}}" method="post">
+            {% csrf_token %}
+            <textarea name="comment"></textarea>
+            <input type="submit" name="">
+        </form>
+    {% endfor %}
+
+    <form action="/blogs" method="post">
+        {% csrf_token %}
+        <input type="text" name="title">
+        <textarea name="blog"></textarea>
+        <input type="submit" name="">
+    </form>
+</body>
+</html>
