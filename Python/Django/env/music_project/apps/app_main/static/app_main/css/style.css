@@ -1,0 +1,61 @@
+*{
+	color: rgba(255,255,255,0.5);
+}
+
+.transBlack{
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+body{
+	background-color: #222222;
+}
+
+.black{
+	background-color: black;
+	width: 24px;
+	height: 224px;
+}
+
+.white{
+	background-color: white;
+	width: 48px;
+	height: 256px;
+	color: black;
+}
+
+.press{
+	background-color: #286090;
+}
+
+.keys{
+	width: 512px;
+	margin: auto;
+	padding: 16px;
+}
+
+.container{
+	padding: 16px;
+	margin-top: 32px;
+}
+
+.container h1{
+	text-align: center;
+}
+
+#metronome{
+	margin: 8px;
+}
+
+#bpm{
+	padding: 0;
+	margin: 8px;
+}
+
+.red{
+	color: red;
+}
+
+.green{
+	color: green;
+}
