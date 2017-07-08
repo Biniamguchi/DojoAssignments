@@ -1,3 +1,5 @@
+package mypackage;
+
 public class Samurai extends Human{
     private static int count = 0;
 

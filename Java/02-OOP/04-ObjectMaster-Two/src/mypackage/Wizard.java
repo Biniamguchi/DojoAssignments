@@ -1,3 +1,5 @@
+package mypackage;
+
 public class Wizard extends Human{
     public Wizard(){
         this.setHealth(50);

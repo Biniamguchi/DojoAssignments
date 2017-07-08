@@ -29,6 +29,24 @@ public class SinglyLinkedList{
         return this.head;
     }
 
+    public Node removeAt(int ind){
+        Node ptr = this.head;
+        Node tmp = null;
+        int cnt  = 0;
+
+        while(ptr.next != null){
+            if(cnt == ind){//step back to previous node to set its next to the next node.
+                tmp.next = tmp.next.next;
+                break;
+            }
+
+            tmp = ptr;//save old node
+            ptr = ptr.next;
+            cnt++;
+        }
+        return this.head;
+    }
+
     public void printValues(){
         Node ptr = this.head;
 
@@ -41,12 +59,12 @@ public class SinglyLinkedList{
     
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
-        sll.add(1);
-        sll.add(2);
-        sll.add(3);
-        sll.add(4);
+        sll.add(5);
+        sll.add(10);
+        sll.add(15);
+        sll.add(20);
 
-        sll.remove();
+        sll.removeAt(1);
         sll.printValues();
     }
 }

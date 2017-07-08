@@ -1,3 +1,5 @@
+package mypackage;
+
 public class Human{
     private int strength;
     private int intelligence;
