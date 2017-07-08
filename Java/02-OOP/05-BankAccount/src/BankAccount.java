@@ -41,20 +41,20 @@ public class BankAccount{
     }
 
     public void deposit(long checking,long savings){
-        this.setCheckingBalance(this.getCheckingBalance()+checking);
-        this.setSavingsBalance(this.getSavingsBalance()+savings);
+        this.setCheckingBalance(checking);
+        this.setSavingsBalance(savings);
         totalRevenue += checking+savings;
     }
 
     public void deposit(long checking){
-        this.setCheckingBalance(this.getCheckingBalance()+checking);
+        this.setCheckingBalance(checking);
         totalRevenue += checking;
     }
 
     public void withdrawal(long checking,long savings){
         if(this.getCheckingBalance() < 1 && this.getSavingsBalance() < 1){return;}
-        this.setCheckingBalance(this.getCheckingBalance()-checking);
-        this.setSavingsBalance(this.getSavingsBalance()-savings);
+        this.setCheckingBalance(-checking);
+        this.setSavingsBalance(-savings);
 
         long total = this.getSavingsBalance()+this.getCheckingBalance();
         totalRevenue -= total;
@@ -70,14 +70,16 @@ public class BankAccount{
     }
 
     public static void main(String[] args) {
-        // BankAccount ref    = new BankAccount(123123,123123);
-        // ref.show();
-        // BankAccount tony   = new BankAccount(3451,3451);
-        // tony.show();
-        // BankAccount jenny  = new BankAccount(23423,23423);
-        //jenny.show();
+        BankAccount ref    = new BankAccount(123123,123123);
+        ref.show();
+        BankAccount tony   = new BankAccount(3451,3451);
+        tony.show();
+        BankAccount jenny  = new BankAccount(23423,23423);
+        jenny.show();
         BankAccount cheryl = new BankAccount(100,100);
         
+        cheryl.show();
+        cheryl.deposit(25);
         cheryl.show();
         cheryl.withdrawal(50);
         cheryl.show();
