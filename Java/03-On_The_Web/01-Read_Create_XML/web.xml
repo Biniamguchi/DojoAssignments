@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <!-- Seems to be just that, a general name of the whole project.  -->
+  <display-name>SimpleServletProject</display-name> 
+  <!-- Tells xml we're going to describe some information about the following servlet -->
+  <servlet>
+    <!-- gives the servlet a name, so we can probably reference it in jsp / spring later. -->
+    <servlet-name>simpleServlet</servlet-name>
+    <!-- tell it where our class is to pull code from -->
+    <servlet-class>org.codingdojo.tutorial.SimpleServlet</servlet-class>
+  </servlet>
+  <!-- first tell it what servlet we want to alter, 'simpleServlet' -->
+  <servlet-mapping>
+    <servlet-name>simpleServlet</servlet-name>
+    <!-- tell it 'simpleServlet' has a route of /simpleServlet -->
+    <url-pattern>/simpleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>xmlServlet</servlet-name>
+    <servlet-class>org.codingdojo.tutorial.XmlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>xmlServlet</servlet-name>
+    <url-pattern>/xmlServletpath</url-pattern>
+  </servlet-mapping>
+  <!-- this is our template to render when this page / servlet has been loaded / get'd / viewed -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

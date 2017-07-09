@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurant>
+    <breakfastMenu>
+        <item category="entree">
+            <name>Big Breakfast</name>
+            <description>Three sausage links, two eggs, two pancakes and homefries.</description>
+            <price>$9.99</price>
+        </item>
+        <item category="entree">
+            <name>Eggs Chesapeake</name>
+            <description>Two poached eggs with a crabcake covered in hollandaise sauce.</description>
+            <price>$9.99</price>
+        </item>
+        <item category="entree">
+            <name>Ham, Egg and Cheese</name>
+            <description>The name says it all!</description>
+            <price>$5.99</price>
+        </item>
+        <item category="beverage">
+            <name>Orange Juice</name>
+            <description>Add some vitamin C this morning.</description>
+            <price>$0.99</price>
+        </item>
+        <item category="beverage">
+            <name>Coffee</name>
+            <description>Good ol' Joe's always there to wake you up.</description>
+            <price>$2.49</price>
+        </item> 
+    </breakfastMenu>
+
+    <lunchMenu>
+        <item category="entree">
+            <name>Chicken Salad</name>
+            <description>A salad with chicken</description>
+            <price>$10.99</price>
+        </item>
+        <item category="entree">
+            <name>Chicken Sandwich</name>
+            <description>A sandwich with chicken</description>
+            <price>$12.99</price>
+        </item>
+        <item category="entree">
+            <name>Pastrami Sandwich</name>
+            <description>A sandwich made with pastrami</description>
+            <price>$13.99</price>
+        </item>
+        <item category="beverage">
+            <name>Coca-Cola</name>
+            <description>A fizzy cola soda</description>
+            <price>$0.99</price>
+        </item>
+        <item category="beverage">
+            <name>Orange Juice</name>
+            <description>A juice made with oranges</description>
+            <price>$0.99</price>
+        </item> 
+    </lunchMenu>
+
+    <dinnerMenu>
+        <item category="entree">
+            <name>Filet Mignon</name>
+            <description>12oz blackened filet mignon. You can't go wrong.</description>
+            <price>$17.99</price>
+        </item>
+        <item category="entree">
+            <name>Ribeye</name>
+            <description>Succulent 16oz bone-in ribeye.</description>
+            <price>$15.99</price>
+        </item>
+        <item category="entree">
+            <name>American Burger</name>
+            <description>Hamburger with lettuce, tomato, mayonaisse, onion, ketchup, mustard and pickles.</description>
+            <price>$11.99</price>
+        </item>
+        <item category="entree">
+            <name>Steak and Lobster</name>
+            <description>12oz filet with 10oz lobster tail. Butter will be covering a majority of your meal.</description>
+            <price>$24.99</price>
+        </item>
+        <item category="beverage">
+            <name>Ginger Ale</name>
+            <description>Ginger and Ale. No alcohol.</description>
+            <price>$2.99</price>
+        </item> 
+    </dinnerMenu>
+</restaurant>
