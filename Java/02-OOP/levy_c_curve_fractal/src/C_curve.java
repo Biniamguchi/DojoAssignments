@@ -38,11 +38,11 @@ public class C_curve extends JPanel {
 
     public static void main(String[] args) {
         C_curve points = new C_curve();
-        points.x = 200; // Stating x value
-        points.y = 100; // Stating y value
-        points.len = 150; // Stating length value
-        points.alpha_angle = 90; // Stating angle value
-        points.iteration_n = 15; // Stating iteration value
+        points.x = 200; 
+        points.y = 100; 
+        points.len = 150; 
+        points.alpha_angle = 90; 
+        points.iteration_n = 15; 
 
         JFrame frame = new JFrame("Points");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,6 +50,5 @@ public class C_curve extends JPanel {
         frame.setSize(500, 500);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
-
     }
 }
