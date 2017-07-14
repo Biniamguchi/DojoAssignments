@@ -29,7 +29,6 @@ public class IndexController{
 	
 	@RequestMapping("/result")
 	public String result(){
-		
 		return "result.jsp";
 	}
 }
