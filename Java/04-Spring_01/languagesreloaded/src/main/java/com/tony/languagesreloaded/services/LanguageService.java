@@ -24,6 +24,8 @@ public class LanguageService{
 	}
 	
 	public Language getByIndex(long id){
+		
+			System.out.println(languageRepository.countByNameContaining("Java"));
 		//if(id < languageRepository.count()){
 			return languageRepository.findOne(id);
 		//}
