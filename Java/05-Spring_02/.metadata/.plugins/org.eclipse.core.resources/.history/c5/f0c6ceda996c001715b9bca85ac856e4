@@ -1,0 +1,27 @@
+package com.tony.relationships.services;
+
+import org.springframework.stereotype.Service;
+
+import com.tony.relationships.models.Person;
+import com.tony.relationships.repositories.PersonRepository;
+
+@Service
+public class PersonService{
+	private PersonRepository personRepository;
+	
+	public PersonService(PersonRepository personRepository){
+		this.personRepository = personRepository;
+	}
+	
+	public void create(Person person){
+		personRepository.save(person);
+	}
+	
+	public void update(Person person){
+		personRepository.save(person);
+	}
+	
+	public void destroy(long id){
+		personRepository.delete(id);
+	}
+}

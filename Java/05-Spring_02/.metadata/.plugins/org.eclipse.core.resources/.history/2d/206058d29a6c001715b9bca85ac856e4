@@ -1,0 +1,37 @@
+package com.tony.relationships.services;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+import com.tony.relationships.models.License;
+import com.tony.relationships.repositories.LicenseRepository;
+
+@Service
+public class LicenseService {
+	private LicenseRepository licenseRepository;
+	
+	public LicenseService(LicenseRepository licenseRepository){
+		this.licenseRepository = licenseRepository;
+	}
+	
+	public void create(License license){
+		licenseRepository.save(license);
+	}
+	
+	public void update(License license){
+		licenseRepository.save(license);
+	}
+	
+	public void destroy(long id){
+		licenseRepository.delete(id);
+	}
+	
+	public ArrayList<License> all(){
+		return (ArrayList<License>) licenseRepository.findAll();
+	}
+	
+	public License findByIndex(long id){
+		return licenseRepository.findOne(id);
+	}
+}

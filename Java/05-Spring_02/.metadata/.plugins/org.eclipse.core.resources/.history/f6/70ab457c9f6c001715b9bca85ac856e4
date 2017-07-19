@@ -1,0 +1,24 @@
+package com.tony.relationships.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.tony.relationships.models.License;
+import com.tony.relationships.services.LicenseService;
+
+@Controller
+@RequestMapping("/licenses")
+public class LicenseController{
+	private LicenseService licenseService;
+	
+	public LicenseController(LicenseService licenseService){
+		this.licenseService = licenseService;
+	}
+	
+	@RequestMapping("/new")
+	public void _new(Model model){
+		model.addAttribute("license",new License());
+		return "new_license";
+	}
+}

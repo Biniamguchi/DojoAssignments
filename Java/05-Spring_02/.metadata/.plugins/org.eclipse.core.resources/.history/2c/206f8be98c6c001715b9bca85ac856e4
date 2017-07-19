@@ -1,0 +1,34 @@
+package com.tony.relationships.models;
+
+import java.util.Date;
+
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+public class License{
+	@Id
+	@GeneratedValue
+	private long id;
+	private String number;
+	private Date expiration_date;
+	private String state;
+	private Date createdAt;
+	private Date updatedAt;
+	
+	@OneToOne(cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+	@JoinColumn(name="person_id")
+	private Person person;
+	
+	public License(){}
+	
+	public License(String number,Person person){
+		this.number = number;
+		this.person = person;
+		this.createdAt = new Date();
+		this.updatedAt = new Date();
+	}
+}

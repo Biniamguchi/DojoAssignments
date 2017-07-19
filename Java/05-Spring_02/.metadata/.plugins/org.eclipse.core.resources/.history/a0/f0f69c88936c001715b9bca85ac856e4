@@ -1,0 +1,19 @@
+package com.tony.relationships.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/")
+public class RelationshipsController{
+	
+	@RequestMapping("persons/new")
+	public String newPerson(){
+		return "newPerson";
+	}
+	
+	@RequestMapping("persons/new")
+	public String newLicense(){
+		return "newLicense";
+	}
+}

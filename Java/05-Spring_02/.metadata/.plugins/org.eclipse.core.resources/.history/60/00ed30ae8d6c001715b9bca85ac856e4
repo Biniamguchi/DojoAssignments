@@ -1,0 +1,13 @@
+package com.tony.relationships.controllers;
+
+@Controller
+@RequestMapping("/")
+public class RelationshipsController{
+	public String newPerson(){
+		return "";
+	}
+	
+	public String newLicense(){
+		return "";
+	}
+}

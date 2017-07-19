@@ -1,0 +1,31 @@
+package com.tony.relationships.controllers;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.tony.relationships.models.Person;
+
+@Controller
+@RequestMapping("/persons")
+public class PersonController {
+	
+	@RequestMapping("/{id}")
+	public String show(@PathVariable("id") long id){
+		return "show";
+	}
+	
+	@RequestMapping("/new")
+	public String newPerson(){
+		return "new";
+	}
+	
+	@PostMapping("/new")
+	public String create(@Valid @ModelAttribute("person") Person person,BindingResult res,RedirectAttributes re){
+		return "redirect:/persons";
+	}
+}

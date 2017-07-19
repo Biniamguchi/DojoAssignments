@@ -1,0 +1,9 @@
+package com.tony.relationships.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/licenses")
+public class LicenseController{
+	
+}

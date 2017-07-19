@@ -1,0 +1,14 @@
+package com.tony.relationships.repositories;
+
+import java.util.ArrayList;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.tony.relationships.models.License;
+import com.tony.relationships.models.Person;
+
+@Repository
+public interface LicenseRepository extends CrudRepository<License,Long>{
+	ArrayList<License> findByPersonIdContaining(Person person);
+}

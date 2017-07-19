@@ -1,0 +1,12 @@
+package com.tony.relationships.models;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class License{
+	@Id
+	@GeneratedValue
+	private long id;
+	
+	
+}

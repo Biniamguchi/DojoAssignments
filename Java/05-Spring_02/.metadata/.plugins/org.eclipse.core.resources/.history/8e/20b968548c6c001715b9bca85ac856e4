@@ -1,0 +1,26 @@
+package com.tony.relationships.models;
+
+import java.util.Date;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class Person{
+	@Id
+	@GeneratedValue
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String number;
+	private Date createdAt;
+	private Date updatedAt;
+	private Person person;
+	@OneToOne(mappedBy="person",fetch=FetchType.LAZY)
+
+	public Person(){}
+	
+	public Person(String number,Person person){
+		this.number = number;
+		this.person = person;
+	}
+}

@@ -1,0 +1,5 @@
+package com.tony.relationships.repositories;
+
+public interface PersonRepository {
+
+}

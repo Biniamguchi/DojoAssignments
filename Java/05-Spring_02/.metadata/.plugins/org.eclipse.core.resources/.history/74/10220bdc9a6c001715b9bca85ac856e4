@@ -1,0 +1,37 @@
+package com.tony.relationships.services;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+import com.tony.relationships.models.Person;
+import com.tony.relationships.repositories.PersonRepository;
+
+@Service
+public class PersonService{
+	private PersonRepository personRepository;
+	
+	public PersonService(PersonRepository personRepository){
+		this.personRepository = personRepository;
+	}
+	
+	public void create(Person person){
+		personRepository.save(person);
+	}
+	
+	public void update(Person person){
+		personRepository.save(person);
+	}
+	
+	public void destroy(long id){
+		personRepository.delete(id);
+	}
+	
+	public ArrayList<Person> all(){
+		return (ArrayList<Person>) personRepository.findAll();
+	}
+	
+	public Person findByIndex(long id){
+		return personRepository.findOne(id);
+	}
+}

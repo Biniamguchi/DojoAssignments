@@ -1,0 +1,9 @@
+package com.tony.relationships.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.tony.relationships.models.License;
+
+public interface LicenseRepository extends CrudRepository<License,Long>{
+
+}

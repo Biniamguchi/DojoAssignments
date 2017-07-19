@@ -1,0 +1,12 @@
+package com.tony.relationships.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/")
+public class RelationshipController {
+	public String index(){
+		return "show_all";
+	}
+}

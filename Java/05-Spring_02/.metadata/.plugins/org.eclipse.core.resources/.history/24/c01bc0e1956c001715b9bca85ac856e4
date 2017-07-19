@@ -1,0 +1,20 @@
+package com.tony.relationships.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/persons")
+public class PersonController {
+	
+	@RequestMapping("/{id}")
+	public String show(@PathVariable("id") long id){
+		return "";
+	}
+	
+	@RequestMapping("/new")
+	public String create(){
+		return "";
+	}
+}

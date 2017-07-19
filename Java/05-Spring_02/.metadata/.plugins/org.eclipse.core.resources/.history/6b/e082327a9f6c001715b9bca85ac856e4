@@ -1,0 +1,16 @@
+package com.tony.relationships.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.tony.relationships.services.LicenseService;
+
+@Controller
+@RequestMapping("/licenses")
+public class LicenseController{
+	private LicenseService licenseService;
+	
+	public LicenseController(LicenseService licenseService){
+		this.licenseService = licenseService;
+	}
+}

@@ -1,0 +1,45 @@
+package com.tony.relationships.services;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+import com.tony.relationships.models.License;
+import com.tony.relationships.repositories.LicenseRepository;
+
+@Service
+public class LicenseService {
+	private LicenseRepository licenseRepository;
+	
+	public LicenseService(LicenseRepository licenseRepository){
+		this.licenseRepository = licenseRepository;
+	}
+	
+	public void create(License license){licenseRepository.save(license);}
+	public void update(License license){licenseRepository.save(license);}
+	public void destroy(long id){licenseRepository.delete(id);}
+		
+	public ArrayList<License> all(){
+		return (ArrayList<License>) licenseRepository.findAll();
+	}
+	
+	public String genLicense(){ // Why they want a string is beyond me.
+		ArrayList<License> licenses = this.all();
+		License lastLicense = licenses.get(licenses.size()-1);
+		String res = "";
+		
+		if(lastLicense == null){
+			res = "000001";
+		}else{
+			double num = lastLicense.getId();
+			num += .000001;
+			res = Double.toString(num);
+		}
+		
+		return res;
+	}
+	
+	public License findByIndex(long id){
+		return licenseRepository.findOne(id);
+	}
+}

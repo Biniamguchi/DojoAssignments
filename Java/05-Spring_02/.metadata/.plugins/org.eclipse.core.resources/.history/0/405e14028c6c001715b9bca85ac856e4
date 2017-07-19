@@ -1,0 +1,28 @@
+package com.tony.relationships.models;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+public class Person{
+	public Person(){}
+	
+	public Person(String firstName,String lastName){
+		
+	}
+	
+	@Id
+	@GeneratedValue
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String number;
+	private Date createdAt;
+	private Date updatedAt;
+	@OneToOne(mappedBy="person",fetch=FetchType.LAZY)
+}
