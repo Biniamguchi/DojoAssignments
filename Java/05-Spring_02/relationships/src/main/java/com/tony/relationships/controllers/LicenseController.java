@@ -17,7 +17,7 @@ import com.tony.relationships.services.PersonService;
 
 @Controller
 @RequestMapping("/licenses")
-public class LicenseController{
+public class LicenseController{	
 	@Autowired
 	private LicenseService licenseService;
 	@Autowired
@@ -42,7 +42,6 @@ public class LicenseController{
 			re.addFlashAttribute("errs",res.getAllErrors());
 			return "redirect:/licenses/new";
 		}else{
-			license.setNumber(licenseService.genLicense());
 			licenseService.create(license);
 			return "redirect:/";
 		}
