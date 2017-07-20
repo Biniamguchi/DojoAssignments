@@ -1,2 +1,4 @@
+activeuserprofiles=Team;debian;py-debian
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=tony
+useridperkey=py-debian.Local\=tony;
