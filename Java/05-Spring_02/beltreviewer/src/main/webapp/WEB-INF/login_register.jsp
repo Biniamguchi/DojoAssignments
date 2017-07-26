@@ -99,9 +99,9 @@
 	
 				<form class="form-horizontal" action="/login" method="post">
 					<div class="form-group">
-						<label class="control-label col-sm-2" for="username">Email:</label>
+						<label class="control-label col-sm-2" for="username">Email | Username:</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="username" placeholder="Enter Email" name="username">
+							<input type="text" class="form-control" id="username" placeholder="Enter Email" name="username">
 						</div>
 					</div>
 					

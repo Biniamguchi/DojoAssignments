@@ -8,4 +8,5 @@ import com.tony.beltreviewer.models.User;
 @Repository
 public interface UserRepository extends CrudRepository<User,Long>{
 	public User findByEmail(String email);
+	public User findByUsername(String username);
 }

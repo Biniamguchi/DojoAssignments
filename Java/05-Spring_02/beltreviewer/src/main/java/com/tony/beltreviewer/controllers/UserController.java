@@ -3,6 +3,8 @@ package com.tony.beltreviewer.controllers;
 import java.security.Principal;
 import java.util.Date;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,12 +33,11 @@ public class UserController {
 	@Autowired
 	private RoleService roleService;
 	private UserValidator userValidator;
-	
 	@Autowired
 	private RingService ringService;
 	@Autowired
 	private GuildService guildService;
-	
+
 	public UserController(UserService userService,RoleService roleService,RingService ringService,GuildService guildService,UserValidator userValidator){
 		this.userService   = userService;
 		this.roleService   = roleService;
@@ -51,11 +52,12 @@ public class UserController {
 		if(logout != null){model.addAttribute("logoutMessage","Logout Successful");}
 		
 		model.addAttribute("user",new User());
+	
 		return "login_register";
 	}
 	
 	@PostMapping("/register")
-	public String register(@Valid @ModelAttribute("user") User user,BindingResult res,Model model){
+	public String register(Principal principal,@Valid @ModelAttribute("user") User user,BindingResult res,Model model,HttpServletRequest req){
 		userValidator.validate(user,res);
 		if(res.hasErrors()){return "login_register";}
 
@@ -76,13 +78,34 @@ public class UserController {
 	}
 	
 	@PostMapping("/admin/{adminId}/updater/{userId}")
-	public String updateUser(){
-		return "";
+	public String updateUser(@PathVariable("adminId") Long adminId,@PathVariable("userId") Long userId,@RequestParam("username") String username,RedirectAttributes flash){
+		if(username.length() < 1){
+			flash.addFlashAttribute("lenErr","Username cannot be blank.");
+			return "redirect:/admin/"+adminId+"/updater/"+userId;
+		}
+		
+		userService.getById(userId).setUsername(username);
+		userService.update(userService.getById(userId));
+		return "redirect:/admin/"+adminId+"/updater/"+userId;
 	}
 	
 	@PostMapping("/users/{id}/rings/add")
-	public String addRing(@PathVariable("id") long userId,@RequestParam("ring") long ringId,RedirectAttributes flash,Model model){
+	public String addRing(@PathVariable("id") long userId,@RequestParam("ring") long ringId,RedirectAttributes flash,Model model,HttpSession session){
 		if(userService.getById(userId).isAdmin()){flash.addFlashAttribute("userOnly","Only users can acquire rings of power, almighty one!"); return "redirect:/dashboard";}
+		
+		if(session.getAttribute("pickedUp") != null){
+			double curTime = new Date().getTime()/1000.0;
+			double diff    = curTime-(double)session.getAttribute("pickedUp");
+			
+			if(diff < 300){ // 5 mins havent passed, deny
+				flash.addFlashAttribute("ringDelay","You must wait another "+diff+" seconds before picking up another ring.");
+				return "redirect:/dashboard";
+			}else{
+				session.setAttribute("pickedUp",null);
+			}
+		}else{
+			session.setAttribute("pickedUp",new Date().getTime()/1000.0);
+		}
 		ringService.getById(ringId).setUser(userService.getById(userId));
 		ringService.update(ringService.getById(ringId));
 		//Switch ring's user to the user who picked it up / transfer ownership? No other logical solution, unless many to many or dont bind to admin on creation and null check.
@@ -111,7 +134,7 @@ public class UserController {
 	
 	@PostMapping("/admin/{id}/rings/new")
 	public String createRing(@Valid @ModelAttribute("ring") Ring ring,BindingResult res,@PathVariable("id") long userId,Model model){
-		if(res.hasErrors()){return "ring_creator";}
+		if(res.hasErrors()){return "ring_creator";}		
 		ring.setUser(userService.getById(userId));
 		ringService.create(ring);
 		return "redirect:/dashboard";
@@ -197,6 +220,7 @@ public class UserController {
 
 		user.setUpdatedAt(new Date());
 		userService.update(user);
+		
 		return "dashboard";
 	}
 }

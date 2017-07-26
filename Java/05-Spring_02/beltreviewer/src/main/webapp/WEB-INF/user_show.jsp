@@ -17,13 +17,26 @@
 </head>
 <body>
 	<div class="container">
-		<form id="dashForm" method="POST" action="/admin/${admin}/guild">
+		<form id="dashForm" method="POST" action="/admin/${admin}/guilds/new">
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 			<br>
 			<input id="back" class="btn btn-link medFont floatRight" type="submit" value="Back" />
 		</form>
 		
-		
+		<h2>Cast a spell of Changing!</h2>
+				
+		<form method="post" action="/admin/${admin}/updater/${user.id}">
+		    <c:if test="${lenErr != null}">
+				<div class="alert alert-danger alert-dismissable">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+					<c:out value="${lenErr}"></c:out>
+				</div>
+		    </c:if>
+
+			<input type="text" name="username" placeholder="${user.username}"></input>
+			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+			<input type="submit" value="Update!"></input>
+		</form>
 	</div>
 </body>
 </html>
