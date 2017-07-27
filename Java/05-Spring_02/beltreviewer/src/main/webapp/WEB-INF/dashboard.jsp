@@ -28,7 +28,13 @@
 			Maybe it'll make you live forever, go invisible, turn your inherent hunger for riches or power into an insatiable
 			curse that eventually dooms your entire species.
 		</p>
-	
+
+	    <c:if test="${ringDelay != null}">
+			<div class="alert alert-danger alert-dismissable">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+				<c:out value="${ringDelay}"></c:out>
+			</div>
+	    </c:if>
 	    <c:if test="${userOnly != null}">
 			<div class="alert alert-danger alert-dismissable">
 				<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
@@ -49,7 +55,7 @@
 		</form>
 		
 		<c:choose>
-			<c:when test="${user.isAdmin() }">
+			<c:when test="${user.isAdmin()}">
 				<h3><a href="/admin/${user.id}/rings/new">Ring Creator (Powerful Ainur Only)</a></h3>
 				<h3><a href="/admin/${user.id}/guilds/new">Person/Team Creator (Powerful Ainur only)</a></h3>		
 			</c:when>

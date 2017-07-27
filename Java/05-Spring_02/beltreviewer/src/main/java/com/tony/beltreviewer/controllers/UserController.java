@@ -94,11 +94,13 @@ public class UserController {
 		if(userService.getById(userId).isAdmin()){flash.addFlashAttribute("userOnly","Only users can acquire rings of power, almighty one!"); return "redirect:/dashboard";}
 		
 		if(session.getAttribute("pickedUp") != null){
-			double curTime = new Date().getTime()/1000.0;
-			double diff    = curTime-(double)session.getAttribute("pickedUp");
+			Double curTime = new Date().getTime()/1000.0;
+			Double delay   = 300.0;
+			Double diff    = Math.floor(curTime-(Double)session.getAttribute("pickedUp"));
 			
-			if(diff < 300){ // 5 mins havent passed, deny
-				flash.addFlashAttribute("ringDelay","You must wait another "+diff+" seconds before picking up another ring.");
+			if(diff < delay){ // 5 mins havent passed, deny
+				Double remaining = delay-diff;
+				flash.addFlashAttribute("ringDelay","You must wait another "+remaining+" seconds before picking up another ring.");
 				return "redirect:/dashboard";
 			}else{
 				session.setAttribute("pickedUp",null);
@@ -106,6 +108,7 @@ public class UserController {
 		}else{
 			session.setAttribute("pickedUp",new Date().getTime()/1000.0);
 		}
+		
 		ringService.getById(ringId).setUser(userService.getById(userId));
 		ringService.update(ringService.getById(ringId));
 		//Switch ring's user to the user who picked it up / transfer ownership? No other logical solution, unless many to many or dont bind to admin on creation and null check.
@@ -126,9 +129,8 @@ public class UserController {
 	}
 		
 	@RequestMapping("/admin/{id}/rings/new")
-	public String newRing(@PathVariable("id") long userId, Model model){
+	public String newRing(@PathVariable("id") long userId,@ModelAttribute("ring") Ring ring,Model model){
 		model.addAttribute("user",userService.getById(userId));
-		model.addAttribute("ring",new Ring());
 		return "ring_creator";
 	}
 	
