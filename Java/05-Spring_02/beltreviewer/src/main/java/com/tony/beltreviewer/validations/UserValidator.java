@@ -7,8 +7,7 @@ import org.springframework.validation.Validator;
 import com.tony.beltreviewer.models.User;
 
 @Component
-public class UserValidator implements Validator{
-
+public class UserValidator implements Validator{	
 	@Override
 	public boolean supports(Class<?> clazz) {
 		return User.class.equals(clazz);
@@ -22,5 +21,4 @@ public class UserValidator implements Validator{
 			errors.rejectValue("confirm","Match");
 		}
 	}
-
 }

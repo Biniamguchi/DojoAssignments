@@ -26,7 +26,10 @@ public class UserService {
 	public List<User> all(){return (List<User>) userRepository.findAll();}
 	public User getById(long id){return userRepository.findOne(id);}
 	public User findByEmail(String email){return userRepository.findByEmail(email);}
-	
+	public User findByUsername(String username){return userRepository.findByUsername(username);}
+	public List<User> findByEmailList(String email){return userRepository.findByEmailList(email);};
+	public List<User> findByUsernameList(String username){return userRepository.findByUsernameList(username);};
+
 	public void create(String[] roles,User user){
 		List<Role> userRoles = new ArrayList<>();
 		

@@ -27,9 +27,29 @@
 							<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
 							<spring:message message="${error}"></spring:message>
 						</div>					
-					</c:forEach>
+ 					</c:forEach>
 				</spring:hasBindErrors>
-	
+				
+			    <c:if test="${userExists != null}">
+					<div class="alert alert-danger alert-dismissable">
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+						<c:out value="${userExists}"></c:out>
+					</div>
+			    </c:if>
+			    <c:if test="${emailExists != null}">
+					<div class="alert alert-danger alert-dismissable">
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+						<c:out value="${emailExists}"></c:out>
+					</div>
+			    </c:if>
+			    
+			    <c:if test="${registerSuccess != null}">
+					<div class="alert alert-success alert-dismissable">
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+						<c:out value="${registerSuccess}"></c:out>
+					</div>
+			    </c:if>
+
 				<form:form name="register" class="form-horizontal" action="/register" method="post" modelAttribute="user">
 					<div class="form-group">
 						<form:label class="control-label col-sm-2" path="email">Email:</form:label>
@@ -96,7 +116,7 @@
 						<c:out value="${logoutMessage}"></c:out>
 					</div>
 			    </c:if>
-	
+
 				<form class="form-horizontal" action="/login" method="post">
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="username">Email | Username:</label>

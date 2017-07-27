@@ -57,17 +57,26 @@ public class UserController {
 	}
 	
 	@PostMapping("/register")
-	public String register(Principal principal,@Valid @ModelAttribute("user") User user,BindingResult res,Model model,HttpServletRequest req){
+	public String register(Principal principal,@Valid @ModelAttribute("user") User user,BindingResult res,Model model,HttpServletRequest req,RedirectAttributes flash){
 		userValidator.validate(user,res);
 		if(res.hasErrors()){return "login_register";}
-
+		if(userService.findByEmail(user.getEmail()) != null){ // Would love to put UserService in UserValidator and validate there, but null pointers.
+			flash.addFlashAttribute("emailExists","This email already exists.");
+			return "redirect:/register";
+		}
+		if(userService.findByUsername(user.getUsername()) != null){
+			flash.addFlashAttribute("userExists","This username already exists.");
+			return "redirect:/register";
+		}
+		
 		if(roleService.findByName("ROLE_ADMIN").getUsers().size() < 1){ // Less than one admin? Make them admin, else user.
 			userService.create(new String[]{"ROLE_USER","ROLE_ADMIN"}, user);
 		}else{
 			userService.create(new String[]{"ROLE_USER"}, user);
 		}
+		flash.addFlashAttribute("registerSuccess","User Created Successfully. Please Login.");
 		
-		return "redirect:/dashboard";
+		return "redirect:/register";
 	}
 	
 	@RequestMapping("/admin/{adminId}/updater/{userId}")
