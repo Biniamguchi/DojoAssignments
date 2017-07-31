@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    function zeroNeg(arr){
+        for(let i=0;i<arr.length;i++){
+            if(arr[i] < 0){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function isEven(num){
+        return num%2 == 0;
+    }
+
+    function howManyEven(arr){
+        let amt = 0;
+        for(let i=0;i<arr.length;i++){
+            if(isEven(arr[i])){
+                amt++;
+            }
+        }
+        return amt;
+    }
+
+    function doDummyArr(n){
+        let dummy = [];
+        for(let i=0;i<n;i++){
+            dummy[0] = Math.random()*10;
+        }
+    }
+
+    function randChoice(arr){
+        return arr[Math.random()*arr.length];
+    }
+</script>
+</body>
+</html>

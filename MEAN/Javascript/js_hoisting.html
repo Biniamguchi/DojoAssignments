@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    // 1 - "world", var is hoisted.
+
+    // 2 - test, is called before initialization, should error.
+
+    // 3 - Will log "only ok" twice.
+
+    // 4 - logs "chicken", errors since eat is called before initialization. It would have printed "half-chicken" if the error didnt happen.
+
+    // 5 - The call wouldnt error, but food will be undefined. food still undefined. Logs "fish". Then should error again, food only exists within mean().
+
+    // 6 - logs "disco". Should error when calling rewind(). Should log "rock". Should log "r&b". Should log "disco" again after rewind body.
+
+    // 7 - Should error about dojo reference before assignment, then error when calling learn(). Should error when logging dojo in function body, its referenced before assignment. Then it would log "burbank." Then should error again about reference before assignment outside function body.
+</script>
+</body>
+</html>
