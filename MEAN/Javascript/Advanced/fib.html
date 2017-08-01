@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    function fib(){
+        let x = 0;
+        let y = 1;
+        let sum;
+
+        function nacci(){
+            sum = x+y;
+            x = y;
+            y = sum;
+            console.log(sum);
+            return sum
+        }
+        return nacci
+    }
+    
+    var fibCounter = fib();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+    fibCounter();
+</script>
+</body>
+</html>
