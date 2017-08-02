@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    <form action="/result" method="post">
+        <label for="name">Name:
+            <input id="name" type="text" name="name">
+        </label>
+
+        <label for="loc">Location:
+            <select id="loc" name="loc">
+                <%for(let i=0;i<dojos.locations.length;i++){%>
+                    <option><%=dojos.locations[i]%></option>
+                <%}%>
+            </select>
+        </label>
+
+        <label for="lang">Language:
+            <select id="lang" name="lang">
+                <%for(let i=0;i<dojos.languages.length;i++){%>
+                    <option><%=dojos.languages[i]%></option>
+                <%}%>
+            </select>
+        </label>
+
+        <label for="comment">Comment (Optional):
+            <textarea id="comment" name="comment"></textarea>            
+        </label>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
