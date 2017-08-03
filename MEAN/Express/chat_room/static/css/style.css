@@ -1,0 +1,7 @@
+.userPanel{
+    width: 16em;
+    height: 16em;
+    display: inline-block;
+    text-align: center;
+    margin: 2%;
+}

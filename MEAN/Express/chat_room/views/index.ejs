@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type ="text/javascript">
+        $(document).ready(function(){
+            var socket = io.connect();
+            socket.on("OnConnect-Sv",function(data){
+                data.username = prompt("What is your name?"); 
+                socket.emit("OnConnect-Cl",data);
+            })
+
+            socket.on("OnDisconnect-Sv",function(data){
+                $("#"+data.id).fadeOut("slow",function(){
+                    $(this).remove();
+                });
+            })
+
+            socket.on("UserConnect-Sv",function(data){
+                let pnl = `<div class="panel panel-default userPanel" id='${data.id}'>`;
+                pnl += `<div class='panel-heading'>${data.username}</div>`;
+                pnl += `<div class='panel-body'></div>`;
+                $("#users").append(pnl);
+
+                $(`#${data.id}`).fadeOut(0,function(){
+                    $(`#${data.id}`).fadeIn("fast");
+                });
+            })
+
+            socket.on("AllUsers-Sv",function(data){
+                $("#users").fadeOut("slow",function(){
+                    for(user in data){
+                        let pnl = `<div class="panel panel-default userPanel" id='${data[user].id}'>`;
+                        pnl += `<div class='panel-heading'>${data[user].username}</div>`;
+                        pnl += `<div class='panel-body'></div>`;
+
+                        $("#users").append(pnl);
+                    }
+                });
+                $("#users").fadeIn("fast");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="users"></div>
+</body>
+</html>
