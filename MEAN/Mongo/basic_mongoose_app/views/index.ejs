@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <table class="table table-bordered table-striped table-hover">
+            
+            <tr>
+                <th>Name:</th>
+                <th>Age:</th>
+            </tr>
+
+            <%for(user in users){%>
+                <tr>
+                    <td><%=users[user].name%></td>
+                    <td><%=users[user].age%></td>
+                </tr>
+            <%}%>
+        </table>
+
+        <form class="form-horizontal" action="/users" method="post">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:
+                </label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" name="name" id="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="age">Age:
+                </label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" name="age" id="age">                    
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        </form>        
+    </div>
+</body>
+</html>
