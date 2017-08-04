@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type ="text/javascript" src="js/chat.js"></script>
+</head>
+<body>
+
+    <div class="container">    
+        <h1>Conversation Board</h1>
+
+        <textarea readonly="true" class="jumbotron" id="chatLog"></textarea>
+
+        <div class="form-group">
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="chatEntry" placeholder="Enter your message here">
+            </div>
+            <button type="submit" id="chatSend" class="btn btn-default">Send</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+#chatLog{
+    height: 50vh;
+    width: 100%;
+    resize: none;
+    padding: 8px;
+    font-size: 20px;
+}
