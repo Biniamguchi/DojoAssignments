@@ -1,0 +1,12 @@
+.left{
+    display: inline-block;
+    width: 40%;
+    margin: 64px;
+}
+
+.right{
+    display: inline-block;
+    width: 40%;
+    margin: 64px;
+}
+
