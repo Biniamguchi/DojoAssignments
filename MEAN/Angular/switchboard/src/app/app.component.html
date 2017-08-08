@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    <h1 class="center">{{title}}</h1>
+
+    <div class="switches">
+        <button class="switch" 
+            *ngFor="let switch of switches; let ind=index"
+
+            (click)="doClick(ind)"
+
+            [ngClass]="{
+                'on':switch.value,
+                'off':!switch.value
+            }"
+        >{{switch.text}}</button>
+    </div>
+</body>
+</html>

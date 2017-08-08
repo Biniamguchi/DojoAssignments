@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.switches{
+    display: inline-block;
+}
+
+.switch{
+    width: 64px;
+    height: 64px;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.on{
+    background-color: green;
+}
+
+.off{
+    background-color: red;
+}
