@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    <h1 class="center">{{title}}</h1>
+
+    <ul class="ul">
+        <li *ngFor="let timezone of timezones" class="li">
+            <button 
+                (click)="onClick(timezone)"
+                [ngClass]="{
+                    'active':timezone.toggled
+                }"
+            >{{timezone.zone}}</button>
+        </li>
+    </ul>
+
+    <h1 class="center">
+        {{ now | date:"medium":curZone}}
+        {{curZone}}
+    </h1>
+</body>
+</html>

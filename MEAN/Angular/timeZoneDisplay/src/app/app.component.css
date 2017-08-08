@@ -1,0 +1,17 @@
+.center{
+    text-align: center;
+}
+
+.ul{
+    width: 20%;
+    margin: auto;
+}
+
+.li{
+    list-style: none;
+    display: inline-block;
+}
+
+.active{
+    background-color: yellow;
+}
