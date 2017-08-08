@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+
+    <h1 *ngFor="let col of cols" [ngStyle]="{ 
+        'background-color':'rgb('+col.col+')',
+        'width':'64px',
+        'height':'64px',
+        'padding':'0',
+        'margin':'0',
+        'display':'inline-block'
+    }"></h1>
+</body>
+</html>
