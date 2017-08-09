@@ -1,0 +1,34 @@
+#header{
+    height: 20vh;
+    background-color: lightblue;
+    margin: 32px;
+    padding: 32px;
+}
+
+#nav{
+    background-color: lightblue;
+    margin: 32px;
+    padding: 32px;
+    width: 40vh;
+    height: 50vh;
+    display: inline-block;
+}
+
+#main{
+    background-color: lightblue;
+    margin: 32px;
+    padding: 32px;
+    height: 50vh;
+    width: 120.5vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.link{
+    background-color: white;
+    display: block;
+    width: 75%;
+    margin: 32px;
+    padding: 1vh;
+    text-align: center;
+}
