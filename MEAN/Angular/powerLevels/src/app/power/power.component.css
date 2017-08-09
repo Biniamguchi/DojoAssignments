@@ -1,0 +1,11 @@
+#power{
+    margin: 32px;
+    padding: 32px;
+    background-color: rgba(0,0,0,0.5);
+    height: 87vh;
+    color:white;
+}
+
+#powerInput{
+    width: 8vh;
+}
