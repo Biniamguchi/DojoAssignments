@@ -1,0 +1,14 @@
+<div id="quote" class="panel panel-default">
+    <div id="left">
+        <h4>"{{quote.text}}"</h4>
+        <h4>- {{quote.author}}</h4>
+    </div>
+    <div id="right">
+        <button (click)="onVoteUp()" class="btn btn-default option">Vote Up</button>
+        <button (click)="onVoteDown()" class="btn btn-default option">Vote Down</button>
+        <button (click)="onDelete()" class="btn btn-default option">Delete</button>
+    </div>
+    <div id="votes">
+        <h1>{{quote.votes}}</h1>
+    </div>
+</div>

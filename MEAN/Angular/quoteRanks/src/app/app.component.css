@@ -1,0 +1,9 @@
+#text{
+    resize: none;
+    height: 16vh;
+}
+
+#quoteForm{
+    width:40em;
+    display: inline-block;
+}
