@@ -1,0 +1,30 @@
+.centerText{
+    text-align: center;
+}
+
+.cont{
+    width: 45%;
+    margin: 2.5%;
+    height: 85vh;
+    display: inline-block;
+}
+
+#left{
+    float: left;
+}
+
+#right{
+    float: right;
+    text-align: center;
+}
+
+#userImg{
+    width: 25%;
+    margin: auto;
+}
+
+.red{color:red;}
+.orange{color:orange;}
+.black{color:black;}
+.green{color:green;}
+.blue{color:blue;}

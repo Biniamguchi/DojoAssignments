@@ -1,0 +1,46 @@
+
+<div id="left" class="cont">
+    <h1 class="centerText">{{ title }}</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text"
+                name="username"
+                id="username"
+                class="form-control"
+                [(ngModel)]="user.username"
+            >
+        </div>
+
+        <button type="submit" class="btn btn-default"
+            (click)="onSubmit()"
+        >Calculate Github Score</button>
+    </form>
+</div>
+<div id="right" class="cont">
+    <div *ngIf="user.data">
+        <h1 class="centerText">{{ user.data.login }}</h1>
+        <br>
+        <img id="userImg" [src]="user.data.avatar_url">
+
+        <h2 
+            class="centerText" [ngClass]="{
+                'red':user.score < 20,
+                'orange':user.score < 50,
+                'black':user.score < 100,
+                'green':user.score < 200,
+                'blue':user.score > 199
+            }"
+            
+        >Score: {{ user.score }}</h2>
+
+        <br>
+        <h3 class="centerText">Full Name: {{user.data.name}}</h3>
+        <h3 class="centerText">Bio: {{user.data.bio}}</h3>
+        <h3 class="centerText">Location: {{user.data.location}}</h3>
+        <h3 class="centerText">Followers: {{user.data.followers}}</h3>
+        <h3 class="centerText">Following: {{user.data.following}}</h3>
+        <h3 class="centerText">Repositories: {{user.data.public_repos}}</h3>
+    </div>
+</div>
