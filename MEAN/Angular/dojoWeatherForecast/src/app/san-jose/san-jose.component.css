@@ -1,0 +1,21 @@
+.centerText{
+    text-align: center;
+}
+
+.left{
+    float: left;
+    padding: 2.5%;
+}
+.right{
+    float:right;
+}
+#cityPic{
+    width:100%;
+}
+
+.cont{
+    width: 45%;
+    height: 50vh;
+    display: inline-block;
+    background-color: rgb(200,200,200);
+}

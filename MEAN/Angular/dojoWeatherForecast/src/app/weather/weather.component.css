@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    width:100%;
+    display: inline-block;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.link{
+    font-size: 16pt;
+    margin: 2.5%;
+}
