@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Products List</h1>
+    <br>
+
+    <div *ngFor="let product of products; let ind=index" class="product">
+        <img class="img" *ngIf="product.img" [src]="product.img">
+        
+        <h2 class="center">{{product.title}}</h2>
+        <h2 class="center">{{product.price | currency:"USD":true}}</h2>
+        <a class="center" [routerLink]="['/products/edit',ind]"><h3>Edit</h3></a>
+        <a class="center" (click)="onDelete(ind)"><h3>Delete</h3></a>
+    </div>
+</div>
+

@@ -1,0 +1,29 @@
+.txt{
+    color: white;
+}
+
+.container{
+    margin-top: 2.5%;
+    background-color: skyblue;
+    padding: 2.5%;
+}
+
+.product{
+    width: 45%;
+    height: 50vh;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    margin: 2.5%;
+    padding: 2.5%;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+    margin: 1%;
+}
+
+#img{
+    width:50%;
+}
