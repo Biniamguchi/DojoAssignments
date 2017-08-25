@@ -1,0 +1,47 @@
+<app-nav></app-nav>
+
+<div *ngIf="poll" class="container c">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>{{poll.question}}</h3>
+        </div>
+
+        <div class="panel-heading">
+            <h4>Click the Vote button to choose one</h4>
+        </div>
+
+        <div class="panel-body">
+            <table class="table table-hover table-striped table-bordered">
+                <tr>
+                    <th>Option</th>
+                    <th>Votes</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td>{{poll.one}}</td>
+                    <td>{{poll.oneVotes}}</td>
+                    <td><a (click)="onVote(1)">Vote</a></td>
+                </tr>
+
+                <tr>
+                    <td>{{poll.two}}</td>
+                    <td>{{poll.twoVotes}}</td>
+                    <td><a (click)="onVote(2)">Vote</a></td>
+                </tr>
+
+                <tr>
+                    <td>{{poll.three}}</td>
+                    <td>{{poll.threeVotes}}</td>
+                    <td><a (click)="onVote(3)">Vote</a></td>
+                </tr>
+
+                <tr>
+                    <td>{{poll.four}}</td>
+                    <td>{{poll.fourVotes}}</td>
+                    <td><a (click)="onVote(4)">Vote</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

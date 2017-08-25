@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a [routerLink]="['/dashboard']" class="navbar-brand">Welcome, {{user.firstName}}</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a [routerLink]="['/dashboard']">Home</a></li>
+            <li class=""><a [routerLink]="['/questions/new']">Add A Question</a></li>
+            <li class=""><a [routerLink]="['/questions']">Questions</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a (click)="onLogout()" [routerLink]="['/']"><span class="glyphicon glyphicon-user"></span>Logout</a></li>
+        </ul>
+    </div>
+</nav>

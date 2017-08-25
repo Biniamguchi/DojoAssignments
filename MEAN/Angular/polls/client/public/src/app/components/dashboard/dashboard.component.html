@@ -1,0 +1,56 @@
+<app-nav></app-nav>
+
+<div class="container c">
+    <form (keyup)="onQuery()" class="form-horizontal" #form=ngForm>
+        <div class="form-group has-feedback" [ngClass]="{
+            'has-success':queryString.valid,
+            'has-warning':queryString.invalid
+        }">
+            <label class="control-label col-sm-1">Search:</label>
+
+            <div class="col-sm-11">
+                <input 
+                    class="form-control has-feedback" 
+                    type="text" 
+                    name="queryString"
+                    [(ngModel)]="query.query"
+                    #queryString="ngModel"
+                    [ngClass]="{
+                        'has-success':queryString.valid,
+                        'has-warning':queryString.invalid
+                    }"
+                >
+
+                <span 
+                    class="glyphicon form-control-feedback"
+                    [ngClass]="{
+                        'glyphicon-ok':queryString.valid,
+                        'glyphicon-warning-sign':queryString.invalid
+                    }"
+                ></span>
+            </div>
+        </div>
+    </form>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Current Polls</h2>
+        </div>
+
+        <table *ngIf="user" class="table table-hover table-striped table-bordered">
+            <tr>
+                <th>Name</th>
+                <th>Survey Question</th>
+                <th>Date Posted</th>
+                <th>Action</th>
+            </tr>
+
+            <tr *ngFor="let poll of polls">
+                <td>{{poll._user.firstName}}</td>
+                <td><a [routerLink]="['/polls/',poll._id]">{{poll.question}}</a></td>
+                <td>{{poll.createdAt | date:"MMMM dd, yyyy"}}</td>
+                <td *ngIf="user._id == poll._user._id"><a (click)="onDelete(poll._id)">Delete</a></td>
+            </tr>
+        </table>
+    </div>
+</div>

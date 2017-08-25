@@ -1,0 +1,28 @@
+.c{
+    margin: 1.25%;
+    padding: 1.25%;
+    border: none;
+    width: 97.5%;
+}
+
+.cnp{
+    margin: 1.25%;
+    padding: 0;
+    border: none;
+    width: 98.75%;
+}
+
+.cnm{
+    margin: 0;
+    padding: 1.25%;
+    border: none;
+    width: 98.75%;
+}
+
+.ilb{
+    display: inline-block;
+    width: 45%;
+}
+
+.left{float: left;}
+.right{float: right;}

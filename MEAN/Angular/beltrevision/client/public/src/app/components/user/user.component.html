@@ -1,0 +1,255 @@
+<div class="container c ilb">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Register</h2>
+        </div>
+
+        <div class="panel-body">
+            <form (submit)="onRegister()" class="form-horizontal" #r=ngForm>
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':r_firstName.valid,
+                    'has-warning':r_firstName.invalid
+                }">
+                    <label class="control-label col-sm-2">First Name</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="firstName"
+                            [(ngModel)]="reg.firstName"
+                            #r_firstName="ngModel"
+                            [ngClass]="{
+                                'has-success':r_firstName.valid,
+                                'has-warning':r_firstName.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':r_firstName.valid,
+                                'glyphicon-warning-sign':r_firstName.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':r_lastName.valid,
+                    'has-warning':r_lastName.invalid
+                }">
+                    <label class="control-label col-sm-2">Last Name</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="lastName"
+                            [(ngModel)]="reg.lastName"
+                            #r_lastName="ngModel"
+                            [ngClass]="{
+                                'has-success':r_lastName.valid,
+                                'has-warning':r_lastName.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':r_lastName.valid,
+                                'glyphicon-warning-sign':r_lastName.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':r_email.valid,
+                    'has-warning':r_email.invalid
+                }">
+                    <label class="control-label col-sm-2">Email</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="email" 
+                            name="email"
+                            [(ngModel)]="reg.email"
+                            #r_email="ngModel"
+                            [ngClass]="{
+                                'has-success':r_email.valid,
+                                'has-warning':r_email.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':r_email.valid,
+                                'glyphicon-warning-sign':r_email.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':r_password.valid,
+                    'has-warning':r_password.invalid
+                }">
+                    <label class="control-label col-sm-2">Password</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="password" 
+                            name="password"
+                            [(ngModel)]="reg.password"
+                            #r_password="ngModel"
+                            [ngClass]="{
+                                'has-success':r_password.valid,
+                                'has-warning':r_password.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':r_password.valid,
+                                'glyphicon-warning-sign':r_password.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':r_confirm.valid,
+                    'has-warning':r_confirm.invalid
+                }">
+                    <label class="control-label col-sm-2">Password Confirmation</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="password" 
+                            name="confirm"
+                            [(ngModel)]="reg.confirm"
+                            #r_confirm="ngModel"
+                            [ngClass]="{
+                                'has-success':r_confirm.valid,
+                                'has-warning':r_confirm.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':r_confirm.valid,
+                                'glyphicon-warning-sign':r_confirm.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <button 
+                    [ngClass]="{
+                        'btn-danger':r.invalid,
+                        'btn-success':r.valid
+                    }"
+                    class="btn col-sm-12"
+                    [disabled]="r.invalid"
+                >
+                Register</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container c ilb right">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Login</h2>
+        </div>
+
+        <div class="panel-body">
+            <form (submit)="onLogin()" class="form-horizontal" #l=ngForm>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':l_email.valid,
+                    'has-warning':l_email.invalid
+                }">
+                    <label class="control-label col-sm-2">Email</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="email" 
+                            name="logemail"
+                            [(ngModel)]="log.email"
+                            #l_email="ngModel"
+                            [ngClass]="{
+                                'has-success':l_email.valid,
+                                'has-warning':l_email.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':l_email.valid,
+                                'glyphicon-warning-sign':l_email.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':l_password.valid,
+                    'has-warning':l_password.invalid
+                }">
+                    <label class="control-label col-sm-2">Password</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="password" 
+                            name="logpassword"
+                            [(ngModel)]="log.password"
+                            #l_password="ngModel"
+                            [ngClass]="{
+                                'has-success':l_password.valid,
+                                'has-warning':l_password.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':l_password.valid,
+                                'glyphicon-warning-sign':l_password.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <button 
+                    [ngClass]="{
+                        'btn-danger':l.invalid,
+                        'btn-success':l.valid
+                    }"
+                    class="btn col-sm-12"
+                    [disabled]="l.invalid"
+                >
+                Login</button>
+            </form>
+        </div>
+    </div>
+</div>

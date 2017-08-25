@@ -1,0 +1,79 @@
+<div *ngIf="question" class="container c">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>{{question.title}}</h3>
+        </div>
+        <div class="panel-heading">
+            <h4>{{question.description}}</h4>
+        </div>
+
+        <div class="panel-body">
+            <form (submit)="onCreate()" class="form-horizontal" #form=ngForm>
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':description.valid,
+                    'has-warning':description.invalid
+                }">
+                    <label class="control-label col-sm-2">Answer:</label>
+
+                    <div class="col-sm-10">
+                        <input
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="description"
+                            minlength="16"
+                            [(ngModel)]="answer.description"
+                            #description="ngModel"
+                            [ngClass]="{
+                                'has-success':description.valid,
+                                'has-warning':description.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':description.valid,
+                                'glyphicon-warning-sign':description.invalid
+                            }"
+                        ></span>
+                    </div>
+                </div>
+
+                <button 
+                    [ngClass]="{
+                        'btn-danger':form.invalid,
+                        'btn-success':form.valid
+                    }"
+                    class="btn col-sm-12"
+                    [disabled]="form.invalid"
+                >
+                Answer Question</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Answers</h2>
+        </div>
+
+        <div class="panel-body">
+            <table class="table table-hover table-striped table-bordered">
+                <tr>
+                    <th>User</th>
+                    <th>Description</th>
+                    <th>Likes</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr *ngFor="let answer of question.answers">
+                    <td>{{answer._user.firstName}} {{answer._user.lastName}}</td>
+                    <td>{{answer.description}}</td>
+                    <td>{{answer.likes}}</td>
+                    <td><a (click)="onLike(answer._id)">Like</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

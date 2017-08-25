@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+
+<div class="container">
+    <a class="lgText" [routerLink]="['/questions/',question._id,'answers','new']">Answer This Question</a>
+
+    <div *ngFor="let answer of question.answers" class="container">
+        <p>{{ answer._user.firstName }}</p>
+        <p>{{ answer.text }} Likes: {{answer.likes}}</p>
+
+        <form (submit)="onLike(answer)">
+            <button type="submit">Like</button>
+        </form>
+    </div>
+</div>

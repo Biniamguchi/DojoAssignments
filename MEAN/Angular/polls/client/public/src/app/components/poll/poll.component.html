@@ -1,0 +1,198 @@
+<app-nav></app-nav>
+
+<div *ngIf="poll._user" class="container c ilb">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2>Create A Poll</h2>
+        </div>
+
+        <div class="panel-body">
+            <form (submit)="onCreate()" class="form-horizontal" #form=ngForm>
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':question.valid,
+                    'has-warning':question.invalid
+                }">
+                    <label class="control-label col-sm-2">Question:</label>
+
+                    <div class="col-sm-10">
+                        <input 
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="question"
+                            minlength="8" 
+                            [(ngModel)]="poll.question"
+                            #question="ngModel"
+                            [ngClass]="{
+                                'has-success':question.valid,
+                                'has-warning':question.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':question.valid,
+                                'glyphicon-warning-sign':question.invalid
+                            }"
+                        ></span>
+
+                        <div *ngIf="question.errors" class="alert alert-danger">
+                            Question must be at least 8 characters in length.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':one.valid,
+                    'has-warning':one.invalid
+                }">
+                    <label class="control-label col-sm-2">Option 1:</label>
+
+                    <div class="col-sm-10">
+                        <input
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="one"
+                            minlength="3"
+                            [(ngModel)]="poll.one"
+                            #one="ngModel"
+                            [ngClass]="{
+                                'has-success':one.valid,
+                                'has-warning':one.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':one.valid,
+                                'glyphicon-warning-sign':one.invalid
+                            }"
+                        ></span>
+
+                        <div *ngIf="one.errors" class="alert alert-danger">
+                            Option 1 must be at least 3 characters in length.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':two.valid,
+                    'has-warning':two.invalid
+                }">
+                    <label class="control-label col-sm-2">Option 2:</label>
+
+                    <div class="col-sm-10">
+                        <input
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="two"
+                            minlength="3"
+                            [(ngModel)]="poll.two"
+                            #two="ngModel"
+                            [ngClass]="{
+                                'has-success':two.valid,
+                                'has-warning':two.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':two.valid,
+                                'glyphicon-warning-sign':two.invalid
+                            }"
+                        ></span>
+
+                        <div *ngIf="two.errors" class="alert alert-danger">
+                            Option 2 must be at least 3 characters in length.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':three.valid,
+                    'has-warning':three.invalid
+                }">
+                    <label class="control-label col-sm-2">Option 3:</label>
+
+                    <div class="col-sm-10">
+                        <input
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="three"
+                            minlength="3"
+                            [(ngModel)]="poll.three"
+                            #three="ngModel"
+                            [ngClass]="{
+                                'has-success':three.valid,
+                                'has-warning':three.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':three.valid,
+                                'glyphicon-warning-sign':three.invalid
+                            }"
+                        ></span>
+
+                        <div *ngIf="three.errors" class="alert alert-danger">
+                            Option 3 must be at least 3 characters in length.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group has-feedback" [ngClass]="{
+                    'has-success':four.valid,
+                    'has-warning':four.invalid
+                }">
+                    <label class="control-label col-sm-2">Option 4:</label>
+
+                    <div class="col-sm-10">
+                        <input
+                            required
+                            class="form-control has-feedback" 
+                            type="text" 
+                            name="four"
+                            minlength="3"
+                            [(ngModel)]="poll.four"
+                            #four="ngModel"
+                            [ngClass]="{
+                                'has-success':four.valid,
+                                'has-warning':four.invalid
+                            }"
+                        >
+
+                        <span 
+                            class="glyphicon form-control-feedback"
+                            [ngClass]="{
+                                'glyphicon-ok':four.valid,
+                                'glyphicon-warning-sign':four.invalid
+                            }"
+                        ></span>
+
+                        <div *ngIf="four.errors" class="alert alert-danger">
+                            Option 4 must be at least 3 characters in length.
+                        </div>
+                    </div>
+                </div>
+
+                <button 
+                    [ngClass]="{
+                        'btn-danger':form.invalid,
+                        'btn-success':form.valid
+                    }"
+                    class="btn col-sm-12"
+                    [disabled]="form.invalid"
+                >
+                Create Poll</button>
+            </form>
+        </div>
+    </div>
+</div>
