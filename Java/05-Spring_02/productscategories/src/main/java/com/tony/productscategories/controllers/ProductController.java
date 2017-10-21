@@ -61,8 +61,8 @@ public class ProductController{
 	public String add(@PathVariable("productId") long productId,@RequestParam("category") long categoryId){
 		Product product   = productService.getById(productId);
 		Category category = categoryService.getById(categoryId);
-		
 		List<Category> categories = product.getCategories();
+		
 		categories.add(category);
 		productService.update(product);
 		

@@ -59,10 +59,10 @@ public class CategoryController {
 	
 	@PostMapping("/{categoryId}")
 	public String add(@PathVariable("categoryId") long categoryId,@RequestParam("product") long productId){
-		Category category = categoryService.getById(categoryId);
-		Product product   = productService.getById(productId);
-		
+		Category category      = categoryService.getById(categoryId);
+		Product product        = productService.getById(productId);
 		List<Product> products = category.getProducts();
+
 		products.add(product);
 		categoryService.update(category);
 		
