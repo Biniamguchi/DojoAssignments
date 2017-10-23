@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/7-human/bin/Debug/netcoreapp2.0/7-human.deps.json
+/home/tony/Documents/code/C#/fundamentals/7-human/bin/Debug/netcoreapp2.0/7-human.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/7-human/bin/Debug/netcoreapp2.0/7-human.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/7-human/bin/Debug/netcoreapp2.0/7-human.dll
+/home/tony/Documents/code/C#/fundamentals/7-human/bin/Debug/netcoreapp2.0/7-human.pdb
+/home/tony/Documents/code/C#/fundamentals/7-human/obj/Debug/netcoreapp2.0/7-human.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/7-human/obj/Debug/netcoreapp2.0/7-human.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/7-human/obj/Debug/netcoreapp2.0/7-human.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/7-human/obj/Debug/netcoreapp2.0/7-human.dll
+/home/tony/Documents/code/C#/fundamentals/7-human/obj/Debug/netcoreapp2.0/7-human.pdb

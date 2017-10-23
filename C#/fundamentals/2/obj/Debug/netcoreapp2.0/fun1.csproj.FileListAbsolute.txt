@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/fun1/bin/Debug/netcoreapp2.0/fun1.deps.json
+/home/tony/Documents/code/C#/fundamentals/fun1/bin/Debug/netcoreapp2.0/fun1.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/fun1/bin/Debug/netcoreapp2.0/fun1.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/fun1/bin/Debug/netcoreapp2.0/fun1.dll
+/home/tony/Documents/code/C#/fundamentals/fun1/bin/Debug/netcoreapp2.0/fun1.pdb
+/home/tony/Documents/code/C#/fundamentals/fun1/obj/Debug/netcoreapp2.0/fun1.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/fun1/obj/Debug/netcoreapp2.0/fun1.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/fun1/obj/Debug/netcoreapp2.0/fun1.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/fun1/obj/Debug/netcoreapp2.0/fun1.dll
+/home/tony/Documents/code/C#/fundamentals/fun1/obj/Debug/netcoreapp2.0/fun1.pdb

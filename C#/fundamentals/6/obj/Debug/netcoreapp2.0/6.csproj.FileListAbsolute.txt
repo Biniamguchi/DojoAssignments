@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/6/bin/Debug/netcoreapp2.0/6.deps.json
+/home/tony/Documents/code/C#/fundamentals/6/bin/Debug/netcoreapp2.0/6.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/6/bin/Debug/netcoreapp2.0/6.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/6/bin/Debug/netcoreapp2.0/6.dll
+/home/tony/Documents/code/C#/fundamentals/6/bin/Debug/netcoreapp2.0/6.pdb
+/home/tony/Documents/code/C#/fundamentals/6/obj/Debug/netcoreapp2.0/6.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/6/obj/Debug/netcoreapp2.0/6.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/6/obj/Debug/netcoreapp2.0/6.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/6/obj/Debug/netcoreapp2.0/6.dll
+/home/tony/Documents/code/C#/fundamentals/6/obj/Debug/netcoreapp2.0/6.pdb

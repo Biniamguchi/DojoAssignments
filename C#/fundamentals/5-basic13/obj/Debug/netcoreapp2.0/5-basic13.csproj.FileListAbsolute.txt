@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/5-basic13/bin/Debug/netcoreapp2.0/5-basic13.deps.json
+/home/tony/Documents/code/C#/fundamentals/5-basic13/bin/Debug/netcoreapp2.0/5-basic13.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/5-basic13/bin/Debug/netcoreapp2.0/5-basic13.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/5-basic13/bin/Debug/netcoreapp2.0/5-basic13.dll
+/home/tony/Documents/code/C#/fundamentals/5-basic13/bin/Debug/netcoreapp2.0/5-basic13.pdb
+/home/tony/Documents/code/C#/fundamentals/5-basic13/obj/Debug/netcoreapp2.0/5-basic13.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/5-basic13/obj/Debug/netcoreapp2.0/5-basic13.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/5-basic13/obj/Debug/netcoreapp2.0/5-basic13.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/5-basic13/obj/Debug/netcoreapp2.0/5-basic13.dll
+/home/tony/Documents/code/C#/fundamentals/5-basic13/obj/Debug/netcoreapp2.0/5-basic13.pdb

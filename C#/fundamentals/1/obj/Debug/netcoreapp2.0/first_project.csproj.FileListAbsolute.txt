@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/first_project/bin/Debug/netcoreapp2.0/first_project.deps.json
+/home/tony/Documents/code/C#/first_project/bin/Debug/netcoreapp2.0/first_project.runtimeconfig.json
+/home/tony/Documents/code/C#/first_project/bin/Debug/netcoreapp2.0/first_project.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/first_project/bin/Debug/netcoreapp2.0/first_project.dll
+/home/tony/Documents/code/C#/first_project/bin/Debug/netcoreapp2.0/first_project.pdb
+/home/tony/Documents/code/C#/first_project/obj/Debug/netcoreapp2.0/first_project.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/first_project/obj/Debug/netcoreapp2.0/first_project.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/first_project/obj/Debug/netcoreapp2.0/first_project.AssemblyInfo.cs
+/home/tony/Documents/code/C#/first_project/obj/Debug/netcoreapp2.0/first_project.dll
+/home/tony/Documents/code/C#/first_project/obj/Debug/netcoreapp2.0/first_project.pdb

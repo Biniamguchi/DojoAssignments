@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/bin/Debug/netcoreapp2.0/LinqSkeleton.deps.json
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/bin/Debug/netcoreapp2.0/LinqSkeleton.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/bin/Debug/netcoreapp2.0/LinqSkeleton.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/bin/Debug/netcoreapp2.0/LinqSkeleton.dll
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/bin/Debug/netcoreapp2.0/LinqSkeleton.pdb
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/obj/Debug/netcoreapp2.0/LinqSkeleton.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/obj/Debug/netcoreapp2.0/LinqSkeleton.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/obj/Debug/netcoreapp2.0/LinqSkeleton.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/obj/Debug/netcoreapp2.0/LinqSkeleton.dll
+/home/tony/Documents/code/C#/fundamentals/10-music_linq/music-linq/obj/Debug/netcoreapp2.0/LinqSkeleton.pdb

@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/bin/Debug/netcoreapp2.0/9-human_samurai_wizard.deps.json
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/bin/Debug/netcoreapp2.0/9-human_samurai_wizard.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/bin/Debug/netcoreapp2.0/9-human_samurai_wizard.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/bin/Debug/netcoreapp2.0/9-human_samurai_wizard.dll
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/bin/Debug/netcoreapp2.0/9-human_samurai_wizard.pdb
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/obj/Debug/netcoreapp2.0/9-human_samurai_wizard.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/obj/Debug/netcoreapp2.0/9-human_samurai_wizard.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/obj/Debug/netcoreapp2.0/9-human_samurai_wizard.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/obj/Debug/netcoreapp2.0/9-human_samurai_wizard.dll
+/home/tony/Documents/code/C#/fundamentals/9-human_samurai_wizard/obj/Debug/netcoreapp2.0/9-human_samurai_wizard.pdb

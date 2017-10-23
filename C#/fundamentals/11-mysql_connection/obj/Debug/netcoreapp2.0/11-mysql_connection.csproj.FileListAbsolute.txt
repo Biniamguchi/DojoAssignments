@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/bin/Debug/netcoreapp2.0/11-mysql_connection.deps.json
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/bin/Debug/netcoreapp2.0/11-mysql_connection.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/bin/Debug/netcoreapp2.0/11-mysql_connection.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/bin/Debug/netcoreapp2.0/11-mysql_connection.dll
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/bin/Debug/netcoreapp2.0/11-mysql_connection.pdb
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/obj/Debug/netcoreapp2.0/11-mysql_connection.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/obj/Debug/netcoreapp2.0/11-mysql_connection.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/obj/Debug/netcoreapp2.0/11-mysql_connection.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/obj/Debug/netcoreapp2.0/11-mysql_connection.dll
+/home/tony/Documents/code/C#/fundamentals/11-mysql_connection/obj/Debug/netcoreapp2.0/11-mysql_connection.pdb

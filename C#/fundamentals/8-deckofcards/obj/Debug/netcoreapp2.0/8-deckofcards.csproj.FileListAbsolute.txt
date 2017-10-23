@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/bin/Debug/netcoreapp2.0/8-deckofcards.deps.json
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/bin/Debug/netcoreapp2.0/8-deckofcards.runtimeconfig.json
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/bin/Debug/netcoreapp2.0/8-deckofcards.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/bin/Debug/netcoreapp2.0/8-deckofcards.dll
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/bin/Debug/netcoreapp2.0/8-deckofcards.pdb
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/obj/Debug/netcoreapp2.0/8-deckofcards.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/obj/Debug/netcoreapp2.0/8-deckofcards.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/obj/Debug/netcoreapp2.0/8-deckofcards.AssemblyInfo.cs
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/obj/Debug/netcoreapp2.0/8-deckofcards.dll
+/home/tony/Documents/code/C#/fundamentals/8-deckofcards/obj/Debug/netcoreapp2.0/8-deckofcards.pdb
