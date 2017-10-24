@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/asp/1-setup/bin/Debug/netcoreapp2.0/1-setup.deps.json
+/home/tony/Documents/code/C#/asp/1-setup/bin/Debug/netcoreapp2.0/1-setup.runtimeconfig.json
+/home/tony/Documents/code/C#/asp/1-setup/bin/Debug/netcoreapp2.0/1-setup.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/asp/1-setup/bin/Debug/netcoreapp2.0/1-setup.dll
+/home/tony/Documents/code/C#/asp/1-setup/bin/Debug/netcoreapp2.0/1-setup.pdb
+/home/tony/Documents/code/C#/asp/1-setup/obj/Debug/netcoreapp2.0/1-setup.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/asp/1-setup/obj/Debug/netcoreapp2.0/1-setup.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/asp/1-setup/obj/Debug/netcoreapp2.0/1-setup.AssemblyInfo.cs
+/home/tony/Documents/code/C#/asp/1-setup/obj/Debug/netcoreapp2.0/1-setup.dll
+/home/tony/Documents/code/C#/asp/1-setup/obj/Debug/netcoreapp2.0/1-setup.pdb

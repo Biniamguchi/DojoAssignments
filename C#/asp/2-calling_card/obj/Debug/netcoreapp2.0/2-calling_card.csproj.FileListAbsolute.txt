@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/asp/2-calling_card/bin/Debug/netcoreapp2.0/2-calling_card.deps.json
+/home/tony/Documents/code/C#/asp/2-calling_card/bin/Debug/netcoreapp2.0/2-calling_card.runtimeconfig.json
+/home/tony/Documents/code/C#/asp/2-calling_card/bin/Debug/netcoreapp2.0/2-calling_card.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/asp/2-calling_card/bin/Debug/netcoreapp2.0/2-calling_card.dll
+/home/tony/Documents/code/C#/asp/2-calling_card/bin/Debug/netcoreapp2.0/2-calling_card.pdb
+/home/tony/Documents/code/C#/asp/2-calling_card/obj/Debug/netcoreapp2.0/2-calling_card.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/asp/2-calling_card/obj/Debug/netcoreapp2.0/2-calling_card.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/asp/2-calling_card/obj/Debug/netcoreapp2.0/2-calling_card.AssemblyInfo.cs
+/home/tony/Documents/code/C#/asp/2-calling_card/obj/Debug/netcoreapp2.0/2-calling_card.dll
+/home/tony/Documents/code/C#/asp/2-calling_card/obj/Debug/netcoreapp2.0/2-calling_card.pdb

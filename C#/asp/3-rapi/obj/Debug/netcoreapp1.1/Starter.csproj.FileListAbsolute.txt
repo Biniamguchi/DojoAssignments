@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/asp/3-rapi/bin/Debug/netcoreapp1.1/Starter.deps.json
+/home/tony/Documents/code/C#/asp/3-rapi/bin/Debug/netcoreapp1.1/Starter.runtimeconfig.json
+/home/tony/Documents/code/C#/asp/3-rapi/bin/Debug/netcoreapp1.1/Starter.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/asp/3-rapi/bin/Debug/netcoreapp1.1/Starter.dll
+/home/tony/Documents/code/C#/asp/3-rapi/bin/Debug/netcoreapp1.1/Starter.pdb
+/home/tony/Documents/code/C#/asp/3-rapi/obj/Debug/netcoreapp1.1/Starter.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/asp/3-rapi/obj/Debug/netcoreapp1.1/Starter.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/asp/3-rapi/obj/Debug/netcoreapp1.1/Starter.AssemblyInfo.cs
+/home/tony/Documents/code/C#/asp/3-rapi/obj/Debug/netcoreapp1.1/Starter.dll
+/home/tony/Documents/code/C#/asp/3-rapi/obj/Debug/netcoreapp1.1/Starter.pdb
