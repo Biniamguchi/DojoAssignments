@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h3>Random Passcode (Passcode #@ViewBag.attempts)</h3>
+		<h1>@TempData["passcode"]</h1>
+
+		<form action="generate" method="post">
+			<input type="submit" value="Generate" />
+		</form>
+	</body>
+</html>
