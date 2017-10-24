@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/asp/4-views/bin/Debug/netcoreapp2.0/4-views.deps.json
+/home/tony/Documents/code/C#/asp/4-views/bin/Debug/netcoreapp2.0/4-views.runtimeconfig.json
+/home/tony/Documents/code/C#/asp/4-views/bin/Debug/netcoreapp2.0/4-views.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/asp/4-views/bin/Debug/netcoreapp2.0/4-views.dll
+/home/tony/Documents/code/C#/asp/4-views/bin/Debug/netcoreapp2.0/4-views.pdb
+/home/tony/Documents/code/C#/asp/4-views/obj/Debug/netcoreapp2.0/4-views.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/asp/4-views/obj/Debug/netcoreapp2.0/4-views.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/asp/4-views/obj/Debug/netcoreapp2.0/4-views.AssemblyInfo.cs
+/home/tony/Documents/code/C#/asp/4-views/obj/Debug/netcoreapp2.0/4-views.dll
+/home/tony/Documents/code/C#/asp/4-views/obj/Debug/netcoreapp2.0/4-views.pdb

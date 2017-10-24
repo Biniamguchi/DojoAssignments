@@ -1,0 +1,10 @@
+/home/tony/Documents/code/C#/asp/5-time_display/bin/Debug/netcoreapp2.0/5-time_display.deps.json
+/home/tony/Documents/code/C#/asp/5-time_display/bin/Debug/netcoreapp2.0/5-time_display.runtimeconfig.json
+/home/tony/Documents/code/C#/asp/5-time_display/bin/Debug/netcoreapp2.0/5-time_display.runtimeconfig.dev.json
+/home/tony/Documents/code/C#/asp/5-time_display/bin/Debug/netcoreapp2.0/5-time_display.dll
+/home/tony/Documents/code/C#/asp/5-time_display/bin/Debug/netcoreapp2.0/5-time_display.pdb
+/home/tony/Documents/code/C#/asp/5-time_display/obj/Debug/netcoreapp2.0/5-time_display.csproj.CoreCompileInputs.cache
+/home/tony/Documents/code/C#/asp/5-time_display/obj/Debug/netcoreapp2.0/5-time_display.AssemblyInfoInputs.cache
+/home/tony/Documents/code/C#/asp/5-time_display/obj/Debug/netcoreapp2.0/5-time_display.AssemblyInfo.cs
+/home/tony/Documents/code/C#/asp/5-time_display/obj/Debug/netcoreapp2.0/5-time_display.dll
+/home/tony/Documents/code/C#/asp/5-time_display/obj/Debug/netcoreapp2.0/5-time_display.pdb

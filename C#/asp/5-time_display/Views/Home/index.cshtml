@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+
+	<body>
+		<h2>The Current Date and Time:</h2>
+
+		@{
+			DateTime dt = DateTime.Now;
+			string time = $"{dt:ddd MMM d, yyyy}";
+			string date = $"{dt:hh:mm tt}";
+		}
+		<h1>@time</h1>
+		<h1>@date</h1>
+	</body>
+</html>
