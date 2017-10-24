@@ -1,0 +1,10 @@
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/bin/Debug/netcoreapp2.0/6-portfolio.deps.json
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/bin/Debug/netcoreapp2.0/6-portfolio.runtimeconfig.json
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/bin/Debug/netcoreapp2.0/6-portfolio.runtimeconfig.dev.json
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/bin/Debug/netcoreapp2.0/6-portfolio.dll
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/bin/Debug/netcoreapp2.0/6-portfolio.pdb
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/obj/Debug/netcoreapp2.0/6-portfolio.csproj.CoreCompileInputs.cache
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/obj/Debug/netcoreapp2.0/6-portfolio.AssemblyInfoInputs.cache
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/obj/Debug/netcoreapp2.0/6-portfolio.AssemblyInfo.cs
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/obj/Debug/netcoreapp2.0/6-portfolio.dll
+/home/tony/Documents/DojoAssignments/DojoAssignments/C#/asp/6-portfolio/obj/Debug/netcoreapp2.0/6-portfolio.pdb

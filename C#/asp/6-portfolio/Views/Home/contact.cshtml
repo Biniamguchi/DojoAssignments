@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="~/css/style.css" />
+	</head>
+
+	<body>
+		<div class="nav">
+			<a href="/">Home</a>
+			<a href="/projects">Projects</a>
+			<a href="/contact">Contact</a>
+		</div>
+
+		<form action="/contact" method="post">
+			<p></p><input placeholder="Name" style="background-color:grey;" type="text" name="name" /></p>
+			<p><input placeholder="Email" style="background-color:grey;" type="text" name="email" /></p>
+			<p><textarea placeholder="message" style="background-color:grey;" type="text" name="message"></textarea></p>
+			<p><input style="background-color:grey;" type="submit" value="Contact" /></p>
+		</form>
+	</body>
+</html>
